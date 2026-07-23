@@ -14,13 +14,6 @@ Full-Stack Developer com foco em Front-End. Estudante de Desenvolvimento de Soft
       src="https://custom-icon-badges.demolab.com/badge/LinkedIn-Conectar-6D28D9?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=2E1065"
     />
   </a>
-  <a href="https://github.com/vinislvleite">
-    <img
-      alt="GitHub"
-      title="Meu GitHub"
-      src="https://custom-icon-badges.demolab.com/badge/GitHub-Perfil-7C3AED?style=for-the-badge&logo=github&logoColor=white&labelColor=2E1065"
-    />
-  </a>
 </p>
 
 ---
