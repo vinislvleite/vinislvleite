@@ -66,11 +66,10 @@ Full-Stack Developer com foco em Front-End. Estudante de Desenvolvimento de Soft
 
 <img src="https://custom-icon-badges.demolab.com/badge/Estatísticas-2E1065?style=for-the-badge&logo=graph&logoColor=white" />
 <br/>
-<br/>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vinislvleite&layout=donut&hide_border=true&bg_color=1a1025&title_color=ffffff&text_color=c9a4ff&border_radius=12" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=vinislvleite&background=1A1025&border=7C3AED&stroke=A78BFA&ring=A78BFA&fire=A78BFA&currStreakLabel=ffffff&sideLabels=c9a4ff&currStreakNum=ffffff&sideNums=ffffff&dates=8B7FB8&hide_border=false" width="48%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=vinislvleite&theme=dracula" height="200" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=vinislvleite&background=1A1025&border=7C3AED&stroke=A78BFA&ring=A78BFA&fire=A78BFA&currStreakLabel=ffffff&sideLabels=c9a4ff&currStreakNum=ffffff&sideNums=ffffff&dates=8B7FB8&hide_border=false" height="200" />
 </p>
 
 <br/>
