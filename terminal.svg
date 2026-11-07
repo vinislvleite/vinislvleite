@@ -11,20 +11,20 @@
       <rect x="2" y="2" width="856" height="952" rx="32" />
     </clipPath>
 
-    <!-- Window Background Gradient (Liquid Glass Frosted Obsidian) -->
+    <!-- Window Background Gradient (Liquid Glass Frosted Obsidian - Deep Purple Tint) -->
     <linearGradient id="windowGlass" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#14192b" stop-opacity="0.94" />
-      <stop offset="40%" stop-color="#0d121f" stop-opacity="0.96" />
-      <stop offset="100%" stop-color="#070912" stop-opacity="0.98" />
+      <stop offset="0%" stop-color="#120e24" stop-opacity="0.95" />
+      <stop offset="40%" stop-color="#0d0a1b" stop-opacity="0.97" />
+      <stop offset="100%" stop-color="#07050e" stop-opacity="0.99" />
     </linearGradient>
 
-    <!-- Window Border Refraction (Apple Specular Bevel Highlight) -->
+    <!-- Window Border Refraction (Apple Specular Bevel Highlight - Pure Purple) -->
     <linearGradient id="liquidGlassBorder" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.75" />
       <stop offset="6%" stop-color="#ffffff" stop-opacity="0.30" />
-      <stop offset="40%" stop-color="#a78bfa" stop-opacity="0.35" />
-      <stop offset="70%" stop-color="#38bdf8" stop-opacity="0.25" />
-      <stop offset="95%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="40%" stop-color="#a78bfa" stop-opacity="0.40" />
+      <stop offset="70%" stop-color="#7c3aed" stop-opacity="0.35" />
+      <stop offset="95%" stop-color="#6d28d9" stop-opacity="0.20" />
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.40" />
     </linearGradient>
 
@@ -97,12 +97,11 @@
 
   <!-- Window Content Layer masked by windowClip for 100% round corners -->
   <g clip-path="url(#windowClip)">
-    <!-- Ambient Light Aurora Bloom Inside Glass -->
+    <!-- Ambient Light Aurora Bloom Inside Glass (Pure Purple Glow) -->
     <g pointer-events="none">
-      <circle cx="720" cy="140" r="260" fill="#7c3aed" opacity="0.28" filter="blur(60px)" />
-      <circle cx="160" cy="200" r="220" fill="#06b6d4" opacity="0.20" filter="blur(55px)" />
-      <circle cx="430" cy="540" r="280" fill="#4f46e5" opacity="0.18" filter="blur(65px)" />
-      <circle cx="430" cy="780" r="240" fill="#ec4899" opacity="0.20" filter="blur(60px)" />
+      <circle cx="700" cy="160" r="280" fill="#7c3aed" opacity="0.25" filter="blur(65px)" />
+      <circle cx="160" cy="420" r="260" fill="#6d28d9" opacity="0.20" filter="blur(65px)" />
+      <circle cx="500" cy="720" r="280" fill="#8b5cf6" opacity="0.20" filter="blur(65px)" />
     </g>
 
     <!-- Diagonal Curved Glass Sheen Reflection -->
