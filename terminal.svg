@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 660" width="100%" height="100%">
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
       <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7c3aed" flood-opacity="0.22" />
@@ -20,7 +20,7 @@
   </defs>
 
   <!-- Janela Principal -->
-  <rect x="2" y="2" width="796" height="516" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
+  <rect x="2" y="2" width="796" height="656" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
 
   <!-- Barra macOS -->
   <path d="M 2 12 Q 2 2 12 2 L 788 2 Q 798 2 798 12 L 798 36 L 2 36 Z" fill="#161b22" />
@@ -132,15 +132,51 @@
     </text>
   </g>
 
-  <!-- SEÇÃO 3: CONTATOS & INFO (SEM STATUS) -->
-  <rect x="28" y="464" width="744" height="42" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <!-- SEÇÃO 3: ESTATISTICAS DE CONTRIBUICAO (STREAK STATS INTEGRADO NO TERMINAL) -->
+  <rect x="28" y="464" width="744" height="134" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="485" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#7c3aed">
+    [ 03. ESTATISTICAS DE DESENVOLVIMENTO ]
+  </text>
+
+  <!-- Divisórias verticais -->
+  <line x1="275" y1="492" x2="275" y2="586" stroke="#30363d" stroke-width="1" />
+  <line x1="525" y1="492" x2="525" y2="586" stroke="#30363d" stroke-width="1" />
+
+  <!-- Total Contributions -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
+    <text x="151" y="528" font-size="28" font-weight="bold" fill="#ff7b72">466</text>
+    <text x="151" y="552" font-size="12" font-weight="600" fill="#f472b6">Total Contributions</text>
+    <text x="151" y="574" font-size="10.5" fill="#8b949e">Mar 13, 2024 - Present</text>
+  </g>
+
+  <!-- Current Streak com Anel Roxo e Chama -->
+  <g text-anchor="middle">
+    <circle cx="400" cy="522" r="23" fill="none" stroke="#7c3aed" stroke-width="3" />
+    <!-- Chama no topo -->
+    <path d="M 400 492 C 396 498 393 502 393 506 C 393 510 396 513 400 513 C 404 513 407 510 407 506 C 407 502 404 498 400 492 Z" fill="#a78bfa" />
+    <path d="M 400 500 C 398 503 397 505 397 507 C 397 509 398 511 400 511 C 402 511 403 509 403 507 C 403 505 402 503 400 500 Z" fill="#79c0ff" />
+    <!-- Valor no centro -->
+    <text x="400" y="529" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="bold" fill="#79c0ff">0</text>
+    <text x="400" y="560" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Current Streak</text>
+    <text x="400" y="578" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" fill="#8b949e">Nov 7</text>
+  </g>
+
+  <!-- Longest Streak -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
+    <text x="649" y="528" font-size="28" font-weight="bold" fill="#ff7b72">8</text>
+    <text x="649" y="552" font-size="12" font-weight="600" fill="#f472b6">Longest Streak</text>
+    <text x="649" y="574" font-size="10.5" fill="#8b949e">Oct 19 - Oct 26</text>
+  </g>
+
+  <!-- SEÇÃO 4: CONTATOS & INFO (SEM STATUS) -->
+  <rect x="28" y="608" width="744" height="40" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
   <g font-family="'Fira Code', Consolas, monospace" font-size="11.5">
-    <text x="44" y="490">
+    <text x="44" y="633">
       <tspan fill="#a78bfa" font-weight="600">LOCAL:</tspan>
       <tspan fill="#e6edf3"> Sao Jose dos Campos, SP</tspan>
       <tspan fill="#8b949e">  |  </tspan>
       <tspan fill="#a78bfa" font-weight="600">LINKEDIN:</tspan>
-      <tspan fill="#58a6ff"> in/vinicius-leite-4792b02ba</tspan>
+      <tspan fill="#58a6ff"> /in/vinicius-leite-4792b02ba</tspan>
       <tspan fill="#8b949e">  |  </tspan>
       <tspan fill="#a78bfa" font-weight="600">GRADUACAO:</tspan>
       <tspan fill="#e6edf3"> Em andamento</tspan>
