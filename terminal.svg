@@ -1,26 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 740" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 760" width="100%" height="100%">
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
       <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7c3aed" flood-opacity="0.22" />
     </filter>
 
-    <!-- Máscara animada Frase 1 (com largura de 680 para NUNCA cortar o texto) -->
+    <!-- Máscara animada Frase 1 perfeitamente sincronizada com o cursor -->
     <clipPath id="clipPhrase1">
       <rect x="28" y="90" width="0" height="35">
-        <animate attributeName="width" values="0; 650; 650; 0; 0; 0; 0" keyTimes="0; 0.32; 0.46; 0.50; 0.50; 0.98; 1" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 375; 375; 0; 0; 0; 0" keyTimes="0; 0.30; 0.475; 0.50; 0.50; 0.975; 1" dur="8s" repeatCount="indefinite" />
       </rect>
     </clipPath>
 
-    <!-- Máscara animada Frase 2 (com largura de 680 para NUNCA cortar o texto) -->
+    <!-- Máscara animada Frase 2 perfeitamente sincronizada com o cursor -->
     <clipPath id="clipPhrase2">
       <rect x="28" y="90" width="0" height="35">
-        <animate attributeName="width" values="0; 0; 0; 0; 650; 650; 0" keyTimes="0; 0.48; 0.50; 0.50; 0.82; 0.96; 1" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 0; 0; 0; 455; 455; 0" keyTimes="0; 0.475; 0.50; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
       </rect>
     </clipPath>
   </defs>
 
   <!-- Janela Principal -->
-  <rect x="2" y="2" width="796" height="736" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
+  <rect x="2" y="2" width="796" height="756" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
 
   <!-- Barra macOS -->
   <path d="M 2 12 Q 2 2 12 2 L 788 2 Q 798 2 798 12 L 798 38 L 2 38 Z" fill="#161b22" />
@@ -47,24 +47,24 @@
   </g>
   <line x1="28" y1="80" x2="770" y2="80" stroke="#21262d" stroke-width="1" />
 
-  <!-- Frase 1 (Sem corte de texto) -->
+  <!-- Frase 1 -->
   <g clip-path="url(#clipPhrase1)">
-    <text x="28" y="112" font-family="'Fira Code', Consolas, monospace" font-size="16" font-weight="600" fill="#a78bfa">
+    <text x="28" y="112" font-family="'Fira Code', Consolas, monospace" font-size="15" font-weight="600" fill="#a78bfa">
       &gt; Mastering React, Next.js and TypeScript
     </text>
   </g>
 
-  <!-- Frase 2 (Sem corte de texto) -->
+  <!-- Frase 2 -->
   <g clip-path="url(#clipPhrase2)">
-    <text x="28" y="112" font-family="'Fira Code', Consolas, monospace" font-size="16" font-weight="600" fill="#a78bfa">
+    <text x="28" y="112" font-family="'Fira Code', Consolas, monospace" font-size="15" font-weight="600" fill="#a78bfa">
       &gt; Full-Stack Developer | Foco em Front-End Moderno
     </text>
   </g>
 
-  <!-- Cursor dinâmico que acompanha o final do texto -->
-  <rect x="28" y="96" width="9" height="19" fill="#ffffff">
+  <!-- Cursor em sincronia milimétrica com a digitação -->
+  <rect x="28" y="96" width="8" height="18" fill="#ffffff">
     <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
-    <animate attributeName="x" values="28; 430; 430; 28; 480; 480; 28" keyTimes="0; 0.32; 0.46; 0.50; 0.82; 0.96; 1" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="x" values="28; 404; 404; 28; 484; 484; 28" keyTimes="0; 0.30; 0.475; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
   </rect>
 
   <!-- ABOUT -->
@@ -73,111 +73,221 @@
     <tspan fill="#7ee787" font-weight="600">ABOUT:</tspan> Cursando Desenvolvimento de Software na FATEC SJC e atuando com clientes reais (GSW e Newe Log).
   </text>
 
-  <!-- SEÇÃO 1: STACK TECNOLOGICA (Fontes maiores e legíveis) -->
-  <rect x="28" y="186" width="744" height="136" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  <text x="44" y="210" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
+  <!-- SEÇÃO 1: STACK TECNOLOGICA COM ÍCONES VETORIAIS -->
+  <rect x="28" y="186" width="744" height="152" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="208" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
     [ 01. STACK TECNOLOGICA ]
   </text>
 
-  <g font-family="'Fira Code', Consolas, monospace" font-size="13">
-    <text x="44" y="236">
-      <tspan fill="#a78bfa" font-weight="600">FRONT-END:</tspan>
-      <tspan fill="#e6edf3"> React • Next.js • Vite • TypeScript • Tailwind CSS • Figma</tspan>
-    </text>
-    <text x="44" y="260">
-      <tspan fill="#a78bfa" font-weight="600">BACK-END:</tspan>
-      <tspan fill="#e6edf3">  Node.js • Java (Spring Boot &amp; Spring Cloud) • Python</tspan>
-    </text>
-    <text x="44" y="284">
-      <tspan fill="#a78bfa" font-weight="600">DATABASES:</tspan>
-      <tspan fill="#e6edf3"> MySQL • MongoDB • Redis • Apache Cassandra • Neo4j</tspan>
-    </text>
-    <text x="44" y="308">
-      <tspan fill="#a78bfa" font-weight="600">DEVOPS:</tspan>
-      <tspan fill="#e6edf3">    Docker • Git • GitHub Actions • Postman • Linux</tspan>
-    </text>
+  <!-- Linha 1: FRONT-END -->
+  <text x="44" y="233" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#a78bfa">FRONT-END:</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
+    <!-- React -->
+    <g transform="translate(130, 220)">
+      <rect width="66" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <ellipse cx="10" cy="10" rx="6" ry="2.2" fill="none" stroke="#61dafb" stroke-width="0.8" />
+      <ellipse cx="10" cy="10" rx="6" ry="2.2" fill="none" stroke="#61dafb" stroke-width="0.8" transform="rotate(60, 10, 10)" />
+      <ellipse cx="10" cy="10" rx="6" ry="2.2" fill="none" stroke="#61dafb" stroke-width="0.8" transform="rotate(120, 10, 10)" />
+      <circle cx="10" cy="10" r="1.2" fill="#61dafb" />
+      <text x="21" y="14" fill="#e6edf3">React</text>
+    </g>
+    <!-- Next.js -->
+    <g transform="translate(202, 220)">
+      <rect width="72" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <circle cx="10" cy="10" r="6" fill="#000000" stroke="#ffffff" stroke-width="0.8" />
+      <text x="10" y="13.5" font-size="8" font-weight="bold" fill="#ffffff" text-anchor="middle">N</text>
+      <text x="21" y="14" fill="#e6edf3">Next.js</text>
+    </g>
+    <!-- TypeScript -->
+    <g transform="translate(280, 220)">
+      <rect width="90" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <rect x="4" y="4" width="12" height="12" rx="2" fill="#3178c6" />
+      <text x="10" y="13" font-size="7.5" font-weight="bold" fill="#ffffff" text-anchor="middle">TS</text>
+      <text x="20" y="14" fill="#e6edf3">TypeScript</text>
+    </g>
+    <!-- Vite -->
+    <g transform="translate(376, 220)">
+      <rect width="58" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <polygon points="10,4 6,10 10,10 9,16 14,9 10,9" fill="#bd34fe" />
+      <polygon points="10,5 7,10 10,10 9,15 13,9 10,9" fill="#ffea83" />
+      <text x="19" y="14" fill="#e6edf3">Vite</text>
+    </g>
+    <!-- Tailwind -->
+    <g transform="translate(440, 220)">
+      <rect width="84" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <path d="M 6 10 C 7 7 9 7 10 9 C 11 11 13 11 14 9 C 13 12 11 12 10 10 C 9 8 7 8 6 10 Z" fill="#38bdf8" />
+      <text x="18" y="14" fill="#e6edf3">Tailwind</text>
+    </g>
+    <!-- Figma -->
+    <g transform="translate(530, 220)">
+      <rect width="66" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <circle cx="7" cy="7" r="2" fill="#f24e1e" />
+      <circle cx="11" cy="7" r="2" fill="#ff7262" />
+      <circle cx="7" cy="11" r="2" fill="#a259ff" />
+      <circle cx="11" cy="11" r="2" fill="#1abcfe" />
+      <circle cx="7" cy="14" r="2" fill="#0acf83" />
+      <text x="18" y="14" fill="#e6edf3">Figma</text>
+    </g>
+  </g>
+
+  <!-- Linha 2: BACK-END -->
+  <text x="44" y="271" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#a78bfa">BACK-END:</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
+    <!-- Node.js -->
+    <g transform="translate(130, 258)">
+      <rect width="78" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <polygon points="10,4 15,7 15,13 10,16 5,13 5,7" fill="#339933" />
+      <text x="10" y="12.5" font-size="6.5" font-weight="bold" fill="#fff" text-anchor="middle">JS</text>
+      <text x="20" y="14" fill="#e6edf3">Node.js</text>
+    </g>
+    <!-- Spring Boot -->
+    <g transform="translate(214, 258)">
+      <rect width="98" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <circle cx="10" cy="10" r="6" fill="#6db33f" />
+      <path d="M 7 13 C 7 10 9 7 13 7 C 13 10 11 13 7 13 Z" fill="#ffffff" />
+      <text x="21" y="14" fill="#e6edf3">Spring Boot</text>
+    </g>
+    <!-- Python -->
+    <g transform="translate(318, 258)">
+      <rect width="72" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <path d="M 6 6 L 10 6 L 10 8 L 13 8 L 13 12 L 11 12 L 11 14 L 7 14 L 7 12 L 5 12 L 5 8 L 8 8 L 8 6 Z" fill="#3776ab" />
+      <circle cx="8" cy="7" r="0.8" fill="#fff" />
+      <circle cx="10" cy="13" r="0.8" fill="#fff" />
+      <text x="18" y="14" fill="#e6edf3">Python</text>
+    </g>
+    <!-- Docker -->
+    <g transform="translate(396, 258)">
+      <rect width="74" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <rect x="5" y="7" width="2" height="1.8" fill="#2496ed" />
+      <rect x="8" y="7" width="2" height="1.8" fill="#2496ed" />
+      <rect x="11" y="7" width="2" height="1.8" fill="#2496ed" />
+      <path d="M 4 10 Q 9 10 14 8.5 Q 13.5 13 8 13 Q 4 13 4 10 Z" fill="#2496ed" />
+      <text x="19" y="14" fill="#e6edf3">Docker</text>
+    </g>
+  </g>
+
+  <!-- Linha 3: BANCOS DE DADOS -->
+  <text x="44" y="309" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#a78bfa">DATABASES:</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
+    <!-- MySQL -->
+    <g transform="translate(130, 296)">
+      <rect width="72" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <ellipse cx="10" cy="6" rx="5" ry="1.8" fill="#00758f" />
+      <path d="M 5 6 L 5 12 Q 10 15 15 12 L 15 6 Z" fill="none" stroke="#00758f" stroke-width="0.9" />
+      <text x="20" y="14" fill="#e6edf3">MySQL</text>
+    </g>
+    <!-- MongoDB -->
+    <g transform="translate(208, 296)">
+      <rect width="86" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <path d="M 10 4 C 13 7 13.5 10 10 15 C 6.5 10 7 7 10 4 Z" fill="#47a248" />
+      <line x1="10" y1="5" x2="10" y2="14" stroke="#ffffff" stroke-width="0.6" />
+      <text x="19" y="14" fill="#e6edf3">MongoDB</text>
+    </g>
+    <!-- Redis -->
+    <g transform="translate(300, 296)">
+      <rect width="66" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <polygon points="10,5 15,7.5 10,10 5,7.5" fill="#dc382d" />
+      <polygon points="5,8 10,10.5 15,8 15,11 10,13.5 5,11" fill="#a3241b" />
+      <polygon points="5,11 10,13.5 15,11 15,14 10,16.5 5,14" fill="#751610" />
+      <text x="19" y="14" fill="#e6edf3">Redis</text>
+    </g>
+    <!-- Cassandra -->
+    <g transform="translate(372, 296)">
+      <rect width="90" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <circle cx="10" cy="10" r="5.5" fill="#14496b" stroke="#3288a2" stroke-width="0.8" />
+      <circle cx="10" cy="10" r="2.5" fill="#ffffff" />
+      <text x="20" y="14" fill="#e6edf3">Cassandra</text>
+    </g>
+    <!-- Neo4j -->
+    <g transform="translate(468, 296)">
+      <rect width="70" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <circle cx="7" cy="10" r="2.5" fill="#008cc1" />
+      <circle cx="13" cy="7" r="2" fill="#008cc1" />
+      <circle cx="13" cy="13" r="2" fill="#008cc1" />
+      <line x1="7" y1="10" x2="13" y2="7" stroke="#008cc1" stroke-width="0.8" />
+      <line x1="7" y1="10" x2="13" y2="13" stroke="#008cc1" stroke-width="0.8" />
+      <text x="19" y="14" fill="#e6edf3">Neo4j</text>
+    </g>
   </g>
 
   <!-- SEÇÃO 2: PROJETOS COM CLIENTES REAIS -->
-  <rect x="28" y="332" width="744" height="166" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  <text x="44" y="356" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
+  <rect x="28" y="348" width="744" height="166" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="372" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
     [ 02. PROJETOS CORPORATIVOS COM CLIENTES REAIS ]
   </text>
 
   <!-- Projeto 1: GSW -->
   <g font-family="'Fira Code', Consolas, monospace">
-    <text x="44" y="382" font-size="13" font-weight="bold" fill="#58a6ff">
+    <text x="44" y="398" font-size="13" font-weight="bold" fill="#58a6ff">
       &gt; GSW Solucoes Integradas
       <tspan fill="#8b949e" font-weight="normal" font-size="12"> | Sistema de Apontamento de Horas &amp; Financeiro</tspan>
     </text>
-    <text x="58" y="401" font-size="12" fill="#8b949e">
+    <text x="58" y="417" font-size="12" fill="#8b949e">
       Gestao de horas, alocacao de squads e auditoria financeira de equipes distribuidas.
     </text>
-    <text x="58" y="420" font-size="12">
+    <text x="58" y="436" font-size="12">
       <tspan fill="#7ee787">Stack:</tspan>
       <tspan fill="#e6edf3"> Next.js • TypeScript • Spring Boot • Spring Cloud • MySQL • Docker</tspan>
     </text>
 
     <!-- Projeto 2: Newe Log -->
-    <text x="44" y="446" font-size="13" font-weight="bold" fill="#58a6ff">
+    <text x="44" y="462" font-size="13" font-weight="bold" fill="#58a6ff">
       &gt; Newe Log
       <tspan fill="#8b949e" font-weight="normal" font-size="12"> | Sistema CRM &amp; Gestao Comercial de Transportes</tspan>
     </text>
-    <text x="58" y="465" font-size="12" fill="#8b949e">
+    <text x="58" y="481" font-size="12" fill="#8b949e">
       Centralizacao de funil de vendas, automacao de checklists e dashboards operacionais.
     </text>
-    <text x="58" y="484" font-size="12">
+    <text x="58" y="500" font-size="12">
       <tspan fill="#7ee787">Stack:</tspan>
       <tspan fill="#e6edf3"> React • Node.js • TypeScript • MySQL • Express</tspan>
     </text>
   </g>
 
-  <!-- SEÇÃO 3: ESTATISTICAS DE DESENVOLVIMENTO (EXATAMENTE COMO NA IMAGEM) -->
-  <rect x="28" y="508" width="744" height="148" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  <text x="44" y="530" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
+  <!-- SEÇÃO 3: ESTATISTICAS DE DESENVOLVIMENTO (INTEGRADA NO TERMINAL) -->
+  <rect x="28" y="524" width="744" height="148" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="546" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
     [ 03. ESTATISTICAS DE CONTRIBUICAO ]
   </text>
 
   <!-- Divisórias verticais -->
-  <line x1="275" y1="538" x2="275" y2="640" stroke="#30363d" stroke-width="1.2" />
-  <line x1="525" y1="538" x2="525" y2="640" stroke="#30363d" stroke-width="1.2" />
+  <line x1="275" y1="554" x2="275" y2="656" stroke="#30363d" stroke-width="1.2" />
+  <line x1="525" y1="554" x2="525" y2="656" stroke="#30363d" stroke-width="1.2" />
 
   <!-- Total Contributions -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
-    <text x="151" y="574" font-size="32" font-weight="bold" fill="#ff7b72">466</text>
-    <text x="151" y="600" font-size="13" font-weight="600" fill="#f472b6">Total Contributions</text>
-    <text x="151" y="624" font-size="11.5" fill="#8b949e">Mar 13, 2024 - Present</text>
+    <text x="151" y="590" font-size="32" font-weight="bold" fill="#ff7b72">466</text>
+    <text x="151" y="616" font-size="13" font-weight="600" fill="#f472b6">Total Contributions</text>
+    <text x="151" y="640" font-size="11.5" fill="#8b949e">Mar 13, 2024 - Present</text>
   </g>
 
   <!-- Current Streak com Anel Roxo e Chama -->
   <g text-anchor="middle">
-    <circle cx="400" cy="566" r="26" fill="none" stroke="#7c3aed" stroke-width="3.5" />
-    <!-- Chama no topo -->
-    <path d="M 400 532 C 395 539 392 543 392 548 C 392 553 395 556 400 556 C 405 556 408 553 408 548 C 408 543 405 539 400 532 Z" fill="#a78bfa" />
-    <path d="M 400 540 C 397 544 396 546 396 549 C 396 551 397 553 400 553 C 403 553 404 551 404 549 C 404 546 403 544 400 540 Z" fill="#79c0ff" />
-    <!-- Valor no centro -->
-    <text x="400" y="574" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="bold" fill="#79c0ff">0</text>
-    <text x="400" y="608" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13.5" font-weight="bold" fill="#ffffff">Current Streak</text>
-    <text x="400" y="628" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" fill="#8b949e">Nov 7</text>
+    <circle cx="400" cy="582" r="26" fill="none" stroke="#7c3aed" stroke-width="3.5" />
+    <path d="M 400 548 C 395 555 392 559 392 564 C 392 569 395 572 400 572 C 405 572 408 569 408 564 C 408 559 405 555 400 548 Z" fill="#a78bfa" />
+    <path d="M 400 556 C 397 560 396 562 396 565 C 396 567 397 569 400 569 C 403 569 404 567 404 565 C 404 562 403 560 400 556 Z" fill="#79c0ff" />
+    <text x="400" y="590" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="bold" fill="#79c0ff">0</text>
+    <text x="400" y="624" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13.5" font-weight="bold" fill="#ffffff">Current Streak</text>
+    <text x="400" y="644" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" fill="#8b949e">Nov 7</text>
   </g>
 
   <!-- Longest Streak -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
-    <text x="649" y="574" font-size="32" font-weight="bold" fill="#ff7b72">8</text>
-    <text x="649" y="600" font-size="13" font-weight="600" fill="#f472b6">Longest Streak</text>
-    <text x="649" y="624" font-size="11.5" fill="#8b949e">Oct 19 - Oct 26</text>
+    <text x="649" y="590" font-size="32" font-weight="bold" fill="#ff7b72">8</text>
+    <text x="649" y="616" font-size="13" font-weight="600" fill="#f472b6">Longest Streak</text>
+    <text x="649" y="640" font-size="11.5" fill="#8b949e">Oct 19 - Oct 26</text>
   </g>
 
   <!-- SEÇÃO 4: GRADUAÇÃO FATEC SJC & CONTATOS -->
-  <rect x="28" y="666" width="744" height="60" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <rect x="28" y="682" width="744" height="60" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
   <g font-family="'Fira Code', Consolas, monospace" font-size="12">
-    <text x="44" y="690">
+    <text x="44" y="706">
       <tspan fill="#a78bfa" font-weight="bold">GRADUACAO:</tspan>
       <tspan fill="#7ee787" font-weight="bold"> Desenvolvimento de Software Multiplataforma</tspan>
       <tspan fill="#8b949e"> na </tspan>
       <tspan fill="#ffffff" font-weight="bold">FATEC SJC</tspan>
     </text>
-    <text x="44" y="714">
+    <text x="44" y="730">
       <tspan fill="#a78bfa" font-weight="bold">LOCAL:</tspan>
       <tspan fill="#e6edf3"> Sao Jose dos Campos, SP</tspan>
       <tspan fill="#8b949e">  |  </tspan>
