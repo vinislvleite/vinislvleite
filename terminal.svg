@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 830" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="100%" height="100%">
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
       <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7c3aed" flood-opacity="0.22" />
     </filter>
 
-    <!-- Máscara animada Frase 1 sincronizada com o cursor -->
+    <!-- Máscara animada Frase 1 perfeitamente sincronizada com o cursor -->
     <clipPath id="clipPhrase1">
       <rect x="28" y="90" width="0" height="35">
         <animate attributeName="width" values="0; 375; 375; 0; 0; 0; 0" keyTimes="0; 0.30; 0.475; 0.50; 0.50; 0.975; 1" dur="8s" repeatCount="indefinite" />
       </rect>
     </clipPath>
 
-    <!-- Máscara animada Frase 2 sincronizada com o cursor -->
+    <!-- Máscara animada Frase 2 perfeitamente sincronizada com o cursor -->
     <clipPath id="clipPhrase2">
       <rect x="28" y="90" width="0" height="35">
         <animate attributeName="width" values="0; 0; 0; 0; 455; 455; 0" keyTimes="0; 0.475; 0.50; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
@@ -20,7 +20,7 @@
   </defs>
 
   <!-- Janela Principal -->
-  <rect x="2" y="2" width="796" height="826" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
+  <rect x="2" y="2" width="796" height="896" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
 
   <!-- Barra macOS -->
   <path d="M 2 12 Q 2 2 12 2 L 788 2 Q 798 2 798 12 L 798 38 L 2 38 Z" fill="#161b22" />
@@ -73,14 +73,14 @@
     <tspan fill="#7ee787" font-weight="600">ABOUT:</tspan> Cursando Desenvolvimento de Software na FATEC SJC e atuando com clientes reais (GSW e Newe Log).
   </text>
 
-  <!-- SEÇÃO 1: STACK COMPLETA COM ÍCONES VETORIAIS (JS, TS, JAVA, PYTHON, POSTGRES, CSS MODULES) -->
-  <rect x="28" y="186" width="744" height="216" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <!-- SEÇÃO 1: STACK COMPLETA EXTRAÍDA DE TODOS OS REPOSITÓRIOS -->
+  <rect x="28" y="186" width="744" height="268" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
   <text x="44" y="208" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
-    [ 01. STACK TECNOLOGICA COMPLETA ]
+    [ 01. STACK TECNOLOGICA COMPLETA DOS PROJETOS ]
   </text>
 
   <!-- FRONT-END: Linha 1 -->
-  <text x="44" y="232" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#a78bfa">FRONT-END:</text>
+  <text x="44" y="232" font-family="'Fira Code', monospace" font-size="10.5" font-weight="bold" fill="#a78bfa">FRONT-END:</text>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
     <!-- React -->
     <g transform="translate(130, 219)">
@@ -112,19 +112,19 @@
       <text x="10" y="13" font-size="7.5" font-weight="bold" fill="#000000" text-anchor="middle">JS</text>
       <text x="20" y="14" fill="#e6edf3">JavaScript</text>
     </g>
-    <!-- Vite -->
+    <!-- React Native / Expo -->
     <g transform="translate(470, 219)">
+      <rect width="102" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <circle cx="10" cy="10" r="6" fill="#000020" stroke="#61dafb" stroke-width="0.8" />
+      <text x="10" y="13" font-size="7" font-weight="bold" fill="#61dafb" text-anchor="middle">RN</text>
+      <text x="20" y="14" fill="#e6edf3">React Native</text>
+    </g>
+    <!-- Vite -->
+    <g transform="translate(578, 219)">
       <rect width="58" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <polygon points="10,4 6,10 10,10 9,16 14,9 10,9" fill="#bd34fe" />
       <polygon points="10,5 7,10 10,10 9,15 13,9 10,9" fill="#ffea83" />
       <text x="19" y="14" fill="#e6edf3">Vite</text>
-    </g>
-    <!-- CSS Modules -->
-    <g transform="translate(534, 219)">
-      <rect width="102" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
-      <rect x="4" y="4" width="12" height="12" rx="2" fill="#264de4" />
-      <text x="10" y="13" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">CSS</text>
-      <text x="20" y="14" fill="#e6edf3">CSS Modules</text>
     </g>
     <!-- Tailwind -->
     <g transform="translate(642, 219)">
@@ -136,8 +136,15 @@
 
   <!-- FRONT-END: Linha 2 -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
-    <!-- Figma -->
+    <!-- CSS Modules -->
     <g transform="translate(130, 245)">
+      <rect width="102" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <rect x="4" y="4" width="12" height="12" rx="2" fill="#264de4" />
+      <text x="10" y="13" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">CSS</text>
+      <text x="20" y="14" fill="#e6edf3">CSS Modules</text>
+    </g>
+    <!-- Figma -->
+    <g transform="translate(238, 245)">
       <rect width="66" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <circle cx="7" cy="7" r="2" fill="#f24e1e" />
       <circle cx="11" cy="7" r="2" fill="#ff7262" />
@@ -147,15 +154,22 @@
       <text x="18" y="14" fill="#e6edf3">Figma</text>
     </g>
     <!-- HTML5 / CSS3 -->
-    <g transform="translate(202, 245)">
+    <g transform="translate(310, 245)">
       <rect width="104" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <text x="8" y="14" font-size="10" fill="#e34f26">●</text>
       <text x="18" y="14" fill="#e6edf3">HTML5 / CSS3</text>
     </g>
+    <!-- Bootstrap -->
+    <g transform="translate(420, 245)">
+      <rect width="84" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <rect x="4" y="4" width="12" height="12" rx="2" fill="#7952b3" />
+      <text x="10" y="13" font-size="7.5" font-weight="bold" fill="#fff" text-anchor="middle">B</text>
+      <text x="20" y="14" fill="#e6edf3">Bootstrap</text>
+    </g>
   </g>
 
   <!-- BACK-END: Linha 1 -->
-  <text x="44" y="286" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#a78bfa">BACK-END:</text>
+  <text x="44" y="286" font-family="'Fira Code', monospace" font-size="10.5" font-weight="bold" fill="#a78bfa">BACK-END:</text>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
     <!-- Node.js -->
     <g transform="translate(130, 273)">
@@ -184,57 +198,105 @@
       <path d="M 7 13 C 7 10 9 7 13 7 C 13 10 11 13 7 13 Z" fill="#ffffff" />
       <text x="21" y="14" fill="#e6edf3">Spring Boot</text>
     </g>
-    <!-- Python -->
+    <!-- Spring Cloud -->
     <g transform="translate(474, 273)">
+      <rect width="102" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <circle cx="10" cy="10" r="6" fill="#30363d" stroke="#6db33f" stroke-width="0.8" />
+      <text x="10" y="13" font-size="6.5" font-weight="bold" fill="#6db33f" text-anchor="middle">SC</text>
+      <text x="20" y="14" fill="#e6edf3">Spring Cloud</text>
+    </g>
+    <!-- Python -->
+    <g transform="translate(582, 273)">
       <rect width="72" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <path d="M 6 6 L 10 6 L 10 8 L 13 8 L 13 12 L 11 12 L 11 14 L 7 14 L 7 12 L 5 12 L 5 8 L 8 8 L 8 6 Z" fill="#3776ab" />
       <circle cx="8" cy="7" r="0.8" fill="#fff" />
       <circle cx="10" cy="13" r="0.8" fill="#fff" />
       <text x="18" y="14" fill="#e6edf3">Python</text>
     </g>
-    <!-- Docker -->
-    <g transform="translate(552, 273)">
-      <rect width="74" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
-      <rect x="5" y="7" width="2" height="1.8" fill="#2496ed" />
-      <rect x="8" y="7" width="2" height="1.8" fill="#2496ed" />
-      <rect x="11" y="7" width="2" height="1.8" fill="#2496ed" />
-      <path d="M 4 10 Q 9 10 14 8.5 Q 13.5 13 8 13 Q 4 13 4 10 Z" fill="#2496ed" />
-      <text x="19" y="14" fill="#e6edf3">Docker</text>
+    <!-- Flask (Solicitado) -->
+    <g transform="translate(660, 273)">
+      <rect width="64" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <path d="M 8 5 L 12 5 L 12 8 L 14 13 L 6 13 L 8 8 Z" fill="none" stroke="#fff" stroke-width="0.8" />
+      <text x="18" y="14" fill="#e6edf3">Flask</text>
     </g>
+  </g>
+
+  <!-- BACK-END: Linha 2 -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
     <!-- Prisma ORM -->
-    <g transform="translate(632, 273)">
-      <rect width="90" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+    <g transform="translate(130, 299)">
+      <rect width="94" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <polygon points="6,15 12,5 15,14" fill="#2d3748" stroke="#5a67d8" stroke-width="0.8" />
       <text x="20" y="14" fill="#e6edf3">Prisma ORM</text>
+    </g>
+    <!-- JWT / Auth -->
+    <g transform="translate(230, 299)">
+      <rect width="66" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <circle cx="10" cy="10" r="5" fill="#d63aff" />
+      <text x="10" y="13" font-size="6" font-weight="bold" fill="#fff" text-anchor="middle">JWT</text>
+      <text x="19" y="14" fill="#e6edf3">JWT</text>
+    </g>
+  </g>
+
+  <!-- DATA & MACHINE LEARNING (PANDAS, NUMPY, JUPYTER, LLM) -->
+  <text x="44" y="340" font-family="'Fira Code', monospace" font-size="10.5" font-weight="bold" fill="#a78bfa">DATA / IA:</text>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
+    <!-- Pandas (Solicitado) -->
+    <g transform="translate(130, 327)">
+      <rect width="78" height="20" rx="4" fill="#1c2333" stroke="#150458" stroke-width="1.2" />
+      <rect x="5" y="5" width="3" height="10" fill="#150458" />
+      <rect x="9" y="8" width="3" height="7" fill="#e70488" />
+      <rect x="13" y="5" width="3" height="10" fill="#ffca00" />
+      <text x="20" y="14" fill="#79c0ff" font-weight="bold">Pandas</text>
+    </g>
+    <!-- NumPy -->
+    <g transform="translate(214, 327)">
+      <rect width="76" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <rect x="4" y="4" width="12" height="12" rx="2" fill="#013243" stroke="#4dabcf" stroke-width="0.8" />
+      <text x="10" y="13" font-size="7" font-weight="bold" fill="#4dabcf" text-anchor="middle">NP</text>
+      <text x="20" y="14" fill="#e6edf3">NumPy</text>
+    </g>
+    <!-- Jupyter -->
+    <g transform="translate(296, 327)">
+      <rect width="80" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <circle cx="10" cy="10" r="5" fill="#f37626" />
+      <circle cx="10" cy="10" r="2.5" fill="#1c2333" />
+      <text x="19" y="14" fill="#e6edf3">Jupyter</text>
+    </g>
+    <!-- LLMs / IA -->
+    <g transform="translate(382, 327)">
+      <rect width="84" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <text x="8" y="14" font-size="11" fill="#7ee787">✦</text>
+      <text x="18" y="14" fill="#e6edf3">LLMs / IA</text>
     </g>
   </g>
 
   <!-- BANCOS DE DADOS (POSTGRESQL INCLUÍDO COM DESTAQUE) -->
-  <text x="44" y="327" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#a78bfa">DATABASES:</text>
+  <text x="44" y="380" font-family="'Fira Code', monospace" font-size="10.5" font-weight="bold" fill="#a78bfa">DATABASES:</text>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
     <!-- PostgreSQL (Destaque solicitado) -->
-    <g transform="translate(130, 314)">
+    <g transform="translate(130, 367)">
       <rect width="94" height="20" rx="4" fill="#1c2333" stroke="#336791" stroke-width="1.2" />
       <circle cx="10" cy="10" r="6" fill="#336791" />
       <text x="10" y="13.5" font-size="7.5" font-weight="bold" fill="#ffffff" text-anchor="middle">PG</text>
       <text x="21" y="14" fill="#79c0ff" font-weight="bold">PostgreSQL</text>
     </g>
     <!-- MySQL -->
-    <g transform="translate(230, 314)">
+    <g transform="translate(230, 367)">
       <rect width="72" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <ellipse cx="10" cy="6" rx="5" ry="1.8" fill="#00758f" />
       <path d="M 5 6 L 5 12 Q 10 15 15 12 L 15 6 Z" fill="none" stroke="#00758f" stroke-width="0.9" />
       <text x="20" y="14" fill="#e6edf3">MySQL</text>
     </g>
     <!-- MongoDB -->
-    <g transform="translate(308, 314)">
+    <g transform="translate(308, 367)">
       <rect width="86" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <path d="M 10 4 C 13 7 13.5 10 10 15 C 6.5 10 7 7 10 4 Z" fill="#47a248" />
       <line x1="10" y1="5" x2="10" y2="14" stroke="#ffffff" stroke-width="0.6" />
       <text x="19" y="14" fill="#e6edf3">MongoDB</text>
     </g>
     <!-- Redis -->
-    <g transform="translate(400, 314)">
+    <g transform="translate(400, 367)">
       <rect width="66" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <polygon points="10,5 15,7.5 10,10 5,7.5" fill="#dc382d" />
       <polygon points="5,8 10,10.5 15,8 15,11 10,13.5 5,11" fill="#a3241b" />
@@ -242,14 +304,14 @@
       <text x="19" y="14" fill="#e6edf3">Redis</text>
     </g>
     <!-- Cassandra -->
-    <g transform="translate(472, 314)">
+    <g transform="translate(472, 367)">
       <rect width="90" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <circle cx="10" cy="10" r="5.5" fill="#14496b" stroke="#3288a2" stroke-width="0.8" />
       <circle cx="10" cy="10" r="2.5" fill="#ffffff" />
       <text x="20" y="14" fill="#e6edf3">Cassandra</text>
     </g>
     <!-- Neo4j -->
-    <g transform="translate(568, 314)">
+    <g transform="translate(568, 367)">
       <rect width="70" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <circle cx="7" cy="10" r="2.5" fill="#008cc1" />
       <circle cx="13" cy="7" r="2" fill="#008cc1" />
@@ -260,34 +322,42 @@
     </g>
   </g>
 
-  <!-- DEVOPS & TOOLS -->
-  <text x="44" y="368" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#a78bfa">DEVOPS:</text>
+  <!-- DEVOPS & CLOUD -->
+  <text x="44" y="420" font-family="'Fira Code', monospace" font-size="10.5" font-weight="bold" fill="#a78bfa">DEVOPS:</text>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
-    <g transform="translate(130, 355)">
+    <g transform="translate(130, 407)">
+      <rect width="74" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
+      <rect x="5" y="7" width="2" height="1.8" fill="#2496ed" />
+      <rect x="8" y="7" width="2" height="1.8" fill="#2496ed" />
+      <rect x="11" y="7" width="2" height="1.8" fill="#2496ed" />
+      <path d="M 4 10 Q 9 10 14 8.5 Q 13.5 13 8 13 Q 4 13 4 10 Z" fill="#2496ed" />
+      <text x="19" y="14" fill="#e6edf3">Docker</text>
+    </g>
+    <g transform="translate(210, 407)">
       <rect width="102" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <circle cx="10" cy="10" r="6" fill="#f05032" />
       <text x="10" y="13.5" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">Git</text>
       <text x="20" y="14" fill="#e6edf3">Git &amp; GitHub</text>
     </g>
-    <g transform="translate(238, 355)">
+    <g transform="translate(318, 407)">
       <rect width="112" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <circle cx="10" cy="10" r="6" fill="#2088ff" />
       <text x="10" y="13.5" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">CI</text>
       <text x="20" y="14" fill="#e6edf3">GitHub Actions</text>
     </g>
-    <g transform="translate(356, 355)">
+    <g transform="translate(436, 407)">
       <rect width="80" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <circle cx="10" cy="10" r="6" fill="#ff6c37" />
       <text x="10" y="13.5" font-size="6.5" font-weight="bold" fill="#fff" text-anchor="middle">PM</text>
       <text x="20" y="14" fill="#e6edf3">Postman</text>
     </g>
-    <g transform="translate(442, 355)">
+    <g transform="translate(522, 407)">
       <rect width="70" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <circle cx="10" cy="10" r="6" fill="#fcc624" />
       <text x="10" y="13.5" font-size="7" font-weight="bold" fill="#000" text-anchor="middle">L</text>
       <text x="20" y="14" fill="#e6edf3">Linux</text>
     </g>
-    <g transform="translate(518, 355)">
+    <g transform="translate(598, 407)">
       <rect width="82" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <circle cx="10" cy="10" r="6" fill="#ff9900" />
       <text x="10" y="13.5" font-size="6" font-weight="bold" fill="#000" text-anchor="middle">AWS</text>
@@ -296,83 +366,83 @@
   </g>
 
   <!-- SEÇÃO 2: PROJETOS COM CLIENTES REAIS -->
-  <rect x="28" y="414" width="744" height="166" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  <text x="44" y="438" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
+  <rect x="28" y="468" width="744" height="166" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="492" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
     [ 02. PROJETOS CORPORATIVOS COM CLIENTES REAIS ]
   </text>
 
   <!-- Projeto 1: GSW -->
   <g font-family="'Fira Code', Consolas, monospace">
-    <text x="44" y="464" font-size="13" font-weight="bold" fill="#58a6ff">
+    <text x="44" y="518" font-size="13" font-weight="bold" fill="#58a6ff">
       &gt; GSW Solucoes Integradas
       <tspan fill="#8b949e" font-weight="normal" font-size="12"> | Sistema de Apontamento de Horas &amp; Financeiro</tspan>
     </text>
-    <text x="58" y="483" font-size="12" fill="#8b949e">
+    <text x="58" y="537" font-size="12" fill="#8b949e">
       Gestao de horas, alocacao de squads e auditoria financeira de equipes distribuidas.
     </text>
-    <text x="58" y="502" font-size="12">
+    <text x="58" y="556" font-size="12">
       <tspan fill="#7ee787">Stack:</tspan>
       <tspan fill="#e6edf3"> Next.js • TypeScript • Spring Boot • Spring Cloud • MySQL • Docker</tspan>
     </text>
 
     <!-- Projeto 2: Newe Log -->
-    <text x="44" y="528" font-size="13" font-weight="bold" fill="#58a6ff">
+    <text x="44" y="582" font-size="13" font-weight="bold" fill="#58a6ff">
       &gt; Newe Log
       <tspan fill="#8b949e" font-weight="normal" font-size="12"> | Sistema CRM &amp; Gestao Comercial de Transportes</tspan>
     </text>
-    <text x="58" y="547" font-size="12" fill="#8b949e">
+    <text x="58" y="601" font-size="12" fill="#8b949e">
       Centralizacao de funil de vendas, automacao de checklists e dashboards operacionais.
     </text>
-    <text x="58" y="566" font-size="12">
+    <text x="58" y="620" font-size="12">
       <tspan fill="#7ee787">Stack:</tspan>
       <tspan fill="#e6edf3"> React • Node.js • TypeScript • MySQL • Express</tspan>
     </text>
   </g>
 
   <!-- SEÇÃO 3: ESTATISTICAS DE DESENVOLVIMENTO (INTEGRADA NO TERMINAL) -->
-  <rect x="28" y="590" width="744" height="150" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  <text x="44" y="612" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
+  <rect x="28" y="648" width="744" height="148" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="670" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
     [ 03. ESTATISTICAS DE CONTRIBUICAO ]
   </text>
 
   <!-- Divisórias verticais -->
-  <line x1="275" y1="620" x2="275" y2="722" stroke="#30363d" stroke-width="1.2" />
-  <line x1="525" y1="620" x2="525" y2="722" stroke="#30363d" stroke-width="1.2" />
+  <line x1="275" y1="678" x2="275" y2="780" stroke="#30363d" stroke-width="1.2" />
+  <line x1="525" y1="678" x2="525" y2="780" stroke="#30363d" stroke-width="1.2" />
 
   <!-- Total Contributions -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
-    <text x="151" y="658" font-size="32" font-weight="bold" fill="#ff7b72">466</text>
-    <text x="151" y="684" font-size="13" font-weight="600" fill="#f472b6">Total Contributions</text>
-    <text x="151" y="708" font-size="11.5" fill="#8b949e">Mar 13, 2024 - Present</text>
+    <text x="151" y="714" font-size="32" font-weight="bold" fill="#ff7b72">466</text>
+    <text x="151" y="740" font-size="13" font-weight="600" fill="#f472b6">Total Contributions</text>
+    <text x="151" y="764" font-size="11.5" fill="#8b949e">Mar 13, 2024 - Present</text>
   </g>
 
   <!-- Current Streak com Anel Roxo e Chama -->
   <g text-anchor="middle">
-    <circle cx="400" cy="650" r="26" fill="none" stroke="#7c3aed" stroke-width="3.5" />
-    <path d="M 400 616 C 395 623 392 627 392 632 C 392 637 395 640 400 640 C 405 640 408 637 408 632 C 408 627 405 623 400 616 Z" fill="#a78bfa" />
-    <path d="M 400 624 C 397 628 396 630 396 633 C 396 635 397 637 400 637 C 403 637 404 635 404 633 C 404 630 403 628 400 624 Z" fill="#79c0ff" />
-    <text x="400" y="658" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="bold" fill="#79c0ff">0</text>
-    <text x="400" y="692" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13.5" font-weight="bold" fill="#ffffff">Current Streak</text>
-    <text x="400" y="712" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" fill="#8b949e">Nov 7</text>
+    <circle cx="400" cy="706" r="26" fill="none" stroke="#7c3aed" stroke-width="3.5" />
+    <path d="M 400 672 C 395 679 392 683 392 688 C 392 693 395 696 400 696 C 405 696 408 693 408 688 C 408 683 405 679 400 672 Z" fill="#a78bfa" />
+    <path d="M 400 680 C 397 684 396 686 396 689 C 396 691 397 693 400 693 C 403 693 404 691 404 689 C 404 686 403 684 400 680 Z" fill="#79c0ff" />
+    <text x="400" y="714" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="bold" fill="#79c0ff">0</text>
+    <text x="400" y="748" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13.5" font-weight="bold" fill="#ffffff">Current Streak</text>
+    <text x="400" y="768" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" fill="#8b949e">Nov 7</text>
   </g>
 
   <!-- Longest Streak -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
-    <text x="649" y="658" font-size="32" font-weight="bold" fill="#ff7b72">8</text>
-    <text x="649" y="684" font-size="13" font-weight="600" fill="#f472b6">Longest Streak</text>
-    <text x="649" y="708" font-size="11.5" fill="#8b949e">Oct 19 - Oct 26</text>
+    <text x="649" y="714" font-size="32" font-weight="bold" fill="#ff7b72">8</text>
+    <text x="649" y="740" font-size="13" font-weight="600" fill="#f472b6">Longest Streak</text>
+    <text x="649" y="764" font-size="11.5" fill="#8b949e">Oct 19 - Oct 26</text>
   </g>
 
   <!-- SEÇÃO 4: GRADUAÇÃO FATEC SJC & CONTATOS -->
-  <rect x="28" y="750" width="744" height="64" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <rect x="28" y="810" width="744" height="64" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
   <g font-family="'Fira Code', Consolas, monospace" font-size="12">
-    <text x="44" y="774">
+    <text x="44" y="834">
       <tspan fill="#a78bfa" font-weight="bold">GRADUACAO:</tspan>
       <tspan fill="#7ee787" font-weight="bold"> Desenvolvimento de Software Multiplataforma</tspan>
       <tspan fill="#8b949e"> na </tspan>
       <tspan fill="#ffffff" font-weight="bold">FATEC SJC</tspan>
     </text>
-    <text x="44" y="798">
+    <text x="44" y="858">
       <tspan fill="#a78bfa" font-weight="bold">LOCAL:</tspan>
       <tspan fill="#e6edf3"> Sao Jose dos Campos, SP</tspan>
       <tspan fill="#8b949e">  |  </tspan>
