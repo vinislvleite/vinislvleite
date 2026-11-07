@@ -1,26 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 280" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 530" width="100%" height="100%">
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#7c3aed" flood-opacity="0.2" />
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7c3aed" flood-opacity="0.22" />
     </filter>
 
-    <!-- Path animado que digita letra por letra a frase 1 -->
-    <path id="typePath1">
-      <animate id="anim1" attributeName="d" begin="0s;anim2.end+0.5s" dur="4s" fill="remove"
-        values="m 28,112 h 0 ; m 28,112 h 650 ; m 28,112 h 650 ; m 28,112 h 0"
-        keyTimes="0;0.5;0.85;1" />
-    </path>
+    <!-- Máscara animada para digitar a Frase 1 -->
+    <clipPath id="clipPhrase1">
+      <rect x="28" y="90" width="0" height="35">
+        <animate attributeName="width" values="0; 450; 450; 0; 0; 0; 0" keyTimes="0; 0.32; 0.46; 0.50; 0.50; 0.98; 1" dur="8s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
 
-    <!-- Path animado que digita letra por letra a frase 2 -->
-    <path id="typePath2">
-      <animate id="anim2" attributeName="d" begin="anim1.end+0.5s" dur="4.5s" fill="remove"
-        values="m 28,112 h 0 ; m 28,112 h 650 ; m 28,112 h 650 ; m 28,112 h 0"
-        keyTimes="0;0.5;0.85;1" />
-    </path>
+    <!-- Máscara animada para digitar a Frase 2 -->
+    <clipPath id="clipPhrase2">
+      <rect x="28" y="90" width="0" height="35">
+        <animate attributeName="width" values="0; 0; 0; 0; 470; 470; 0" keyTimes="0; 0.48; 0.50; 0.50; 0.82; 0.96; 1" dur="8s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
   </defs>
 
   <!-- Janela Principal -->
-  <rect x="2" y="2" width="796" height="276" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
+  <rect x="2" y="2" width="796" height="526" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
 
   <!-- Barra macOS -->
   <path d="M 2 12 Q 2 2 12 2 L 788 2 Q 798 2 798 12 L 798 36 L 2 36 Z" fill="#161b22" />
@@ -35,57 +35,110 @@
     vinicius@workstation: ~ (zsh)
   </text>
 
-  <!-- Prompt -->
+  <!-- Linha de Prompt -->
   <g font-family="'Fira Code', Consolas, monospace" font-size="13">
     <text x="28" y="66">
       <tspan fill="#3fb950" font-weight="600">vinicius@developer</tspan>
       <tspan fill="#8b949e">:</tspan>
       <tspan fill="#58a6ff">~</tspan>
       <tspan fill="#8b949e">$ </tspan>
-      <tspan fill="#e6edf3">neofetch --profile</tspan>
+      <tspan fill="#e6edf3">neofetch --full-profile</tspan>
     </text>
   </g>
   <line x1="28" y1="78" x2="770" y2="78" stroke="#21262d" stroke-width="1" />
 
-  <!-- Digitação animada letra por letra estilo máquina de escrever -->
-  <text font-family="'Fira Code', Consolas, monospace" font-size="15" font-weight="600" fill="#a78bfa">
-    <textPath xlink:href="#typePath1">
+  <!-- Digitação Letra por Letra Frase 1 -->
+  <g clip-path="url(#clipPhrase1)">
+    <text x="28" y="112" font-family="'Fira Code', Consolas, monospace" font-size="15" font-weight="600" fill="#a78bfa">
       &gt; Mastering React, Next.js and TypeScript
-    </textPath>
-  </text>
+    </text>
+  </g>
 
-  <text font-family="'Fira Code', Consolas, monospace" font-size="15" font-weight="600" fill="#a78bfa">
-    <textPath xlink:href="#typePath2">
-      &gt; Full-Stack Developer | Soluções para clientes reais
-    </textPath>
-  </text>
+  <!-- Digitação Letra por Letra Frase 2 -->
+  <g clip-path="url(#clipPhrase2)">
+    <text x="28" y="112" font-family="'Fira Code', Consolas, monospace" font-size="15" font-weight="600" fill="#a78bfa">
+      &gt; Full-Stack Developer | Foco em Front-End Moderno
+    </text>
+  </g>
 
-  <!-- Cursor piscando -->
-  <rect x="660" y="98" width="8" height="17" fill="#ffffff">
+  <!-- Cursor que corre junto com as letras digitadas -->
+  <rect x="28" y="98" width="8" height="17" fill="#ffffff">
     <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
+    <animate attributeName="x" values="28; 390; 390; 28; 430; 430; 28" keyTimes="0; 0.32; 0.46; 0.50; 0.82; 0.96; 1" dur="8s" repeatCount="indefinite" />
   </rect>
 
-  <!-- Card Interno de Informações -->
-  <rect x="28" y="130" width="744" height="106" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <!-- SEÇÃO 1: STACK & TECNOLOGIAS -->
+  <rect x="28" y="130" width="744" height="126" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="152" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#7c3aed">
+    [ 01. STACK TECNOLOGICA ]
+  </text>
 
   <g font-family="'Fira Code', Consolas, monospace" font-size="12">
-    <text x="44" y="162">
-      <tspan fill="#a78bfa" font-weight="600">STACK:</tspan>
-      <tspan fill="#e6edf3"> React | Next.js | TypeScript | Node.js | Spring Boot</tspan>
+    <text x="44" y="176">
+      <tspan fill="#a78bfa" font-weight="600">FRONT-END:</tspan>
+      <tspan fill="#e6edf3"> React • Next.js • Vite • TypeScript • Tailwind CSS • Figma</tspan>
     </text>
-    <text x="44" y="202">
-      <tspan fill="#a78bfa" font-weight="600">LOCAL:</tspan>
-      <tspan fill="#e6edf3"> São José dos Campos, SP</tspan>
+    <text x="44" y="198">
+      <tspan fill="#a78bfa" font-weight="600">BACK-END:</tspan>
+      <tspan fill="#e6edf3">  Node.js • Java (Spring Boot &amp; Spring Cloud) • Python</tspan>
+    </text>
+    <text x="44" y="220">
+      <tspan fill="#a78bfa" font-weight="600">DATABASES:</tspan>
+      <tspan fill="#e6edf3"> MySQL • MongoDB • Redis • Apache Cassandra • Neo4j</tspan>
+    </text>
+    <text x="44" y="242">
+      <tspan fill="#a78bfa" font-weight="600">DEVOPS:</tspan>
+      <tspan fill="#e6edf3">    Docker • Git • GitHub Actions • Postman • Linux</tspan>
+    </text>
+  </g>
+
+  <!-- SEÇÃO 2: PROJETOS COM CLIENTES REAIS -->
+  <rect x="28" y="268" width="744" height="152" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="290" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#7c3aed">
+    [ 02. PROJETOS CORPORATIVOS COM CLIENTES REAIS ]
+  </text>
+
+  <!-- Projeto 1: GSW -->
+  <g font-family="'Fira Code', Consolas, monospace">
+    <text x="44" y="316" font-size="12.5" font-weight="bold" fill="#58a6ff">
+      &gt; GSW Solucoes Integradas
+      <tspan fill="#8b949e" font-weight="normal" font-size="11.5"> | Sistema de Apontamento de Horas &amp; Financeiro</tspan>
+    </text>
+    <text x="58" y="334" font-size="11" fill="#8b949e">
+      Gestao de horas, alocacao de squads e auditoria financeira de equipes distribuidas.
+    </text>
+    <text x="58" y="352" font-size="11">
+      <tspan fill="#7ee787">Stack:</tspan>
+      <tspan fill="#e6edf3"> Next.js • TypeScript • Spring Boot • Spring Cloud • MySQL • Docker</tspan>
     </text>
 
-    <text x="430" y="162">
-      <tspan fill="#a78bfa" font-weight="600">CLIENTES:</tspan>
-      <tspan fill="#e6edf3"> GSW Soluções Integradas, Newe Log</tspan>
+    <!-- Projeto 2: Newe Log -->
+    <text x="44" y="380" font-size="12.5" font-weight="bold" fill="#58a6ff">
+      &gt; Newe Log
+      <tspan fill="#8b949e" font-weight="normal" font-size="11.5"> | Sistema CRM &amp; Gestao Comercial de Transportes</tspan>
     </text>
-    <circle cx="436" cy="199" r="4" fill="#2ea043" />
-    <text x="448" y="202">
+    <text x="58" y="398" font-size="11" fill="#8b949e">
+      Centralizacao de funil de vendas, automacao de checklists e dashboards operacionais.
+    </text>
+    <text x="58" y="416" font-size="11">
+      <tspan fill="#7ee787">Stack:</tspan>
+      <tspan fill="#e6edf3"> React • Node.js • TypeScript • MySQL • Express</tspan>
+    </text>
+  </g>
+
+  <!-- SEÇÃO 3: STATUS DO SISTEMA -->
+  <rect x="28" y="432" width="744" height="74" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <g font-family="'Fira Code', Consolas, monospace" font-size="11.5">
+    <text x="44" y="456">
+      <tspan fill="#a78bfa" font-weight="600">LOCAL:</tspan>
+      <tspan fill="#e6edf3"> Sao Jose dos Campos, SP</tspan>
+      <tspan fill="#8b949e">  |  </tspan>
+      <tspan fill="#a78bfa" font-weight="600">FORMACAO:</tspan>
+      <tspan fill="#e6edf3"> Graduacao em Software (em andamento)</tspan>
+    </text>
+    <text x="44" y="482">
       <tspan fill="#a78bfa" font-weight="600">STATUS:</tspan>
-      <tspan fill="#3fb950" font-weight="500"> Disponível para novas oportunidades</tspan>
+      <tspan fill="#2ea043" font-weight="bold">● Disponivel para contratacao e novos projetos</tspan>
     </text>
   </g>
 </svg>
