@@ -1,4 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 980" width="100%" height="100%" style="cursor: default; pointer-events: none; user-select: none;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 1010" width="100%" height="100%" style="cursor: default; pointer-events: none; user-select: none;">
+  <style>
+    text, tspan {
+      font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+    }
+  </style>
+
   <defs>
     <!-- Crisp subtle shadow with zero colored glow -->
     <filter id="cleanShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
@@ -7,7 +13,7 @@
 
     <!-- ClipPath to enforce perfect Apple rounded corners on window content -->
     <clipPath id="windowClip">
-      <rect x="10" y="10" width="800" height="960" rx="24" />
+      <rect x="10" y="10" width="800" height="990" rx="24" />
     </clipPath>
 
     <!-- Window Background Gradient: Simple elegant gradient from black to dark purple -->
@@ -82,7 +88,7 @@
   </defs>
 
   <!-- Main Window with Apple Continuous Curved Corners (rx=24) - Zero Glow, Crisp Glass -->
-  <rect x="10" y="10" width="800" height="960" rx="24" fill="url(#windowGlass)" stroke="url(#liquidGlassBorder)" stroke-width="1.6" filter="url(#cleanShadow)" />
+  <rect x="10" y="10" width="800" height="990" rx="24" fill="url(#windowGlass)" stroke="url(#liquidGlassBorder)" stroke-width="1.6" filter="url(#cleanShadow)" />
 
   <!-- Window Content Layer masked by windowClip for 100% round corners -->
   <g clip-path="url(#windowClip)">
@@ -103,8 +109,8 @@
     <ellipse cx="72.5" cy="29.5" rx="2.5" ry="1.2" fill="#ffffff" opacity="0.65" />
 
     <!-- Title Capsule Pill (Frosted Glass) -->
-    <rect x="295" y="20" width="230" height="26" rx="13" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.8" />
-    <text x="410" y="37" text-anchor="middle" fill="#cbd5e1" font-size="12" font-weight="500" letter-spacing="0.3" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif">
+    <rect x="290" y="20" width="240" height="26" rx="13" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.8" />
+    <text x="410" y="37" text-anchor="middle" fill="#cbd5e1" font-size="12" font-weight="500" letter-spacing="0.3" font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace">
       vinicius@workstation: ~ (zsh)
     </text>
 
@@ -140,35 +146,37 @@
       <animate attributeName="x" values="34; 440; 440; 34; 536; 536; 34" keyTimes="0; 0.30; 0.475; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
     </rect>
 
-    <!-- CARD 1: ABOUT (Spacious Frosted Glass Panel) -->
-    <rect x="30" y="146" width="760" height="70" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
+    <!-- CARD 1: ABOUT (Spacious Frosted Glass Panel - Pure Monospace Terminal) -->
+    <rect x="30" y="146" width="760" height="90" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
     <line x1="42" y1="147" x2="778" y2="147" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
-    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', 'Inter', system-ui, sans-serif">
-      <text x="48" y="172" font-size="13.5">
+    <g font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace">
+      <text x="48" y="172" font-size="12.5" letter-spacing="0.2">
         <tspan fill="#a855f7" font-weight="600">&gt; </tspan>
         <tspan fill="#4ade80" font-weight="600">ABOUT: </tspan>
-        <tspan fill="#ffffff" font-weight="600">Software Engineering student</tspan>
+        <tspan fill="#ffffff">Software Engineering student</tspan>
         <tspan fill="#cbd5e1"> at </tspan>
         <tspan fill="#60a5fa" font-weight="600">FATEC SJC</tspan>
-        <tspan fill="#cbd5e1">, building production-ready architectures and enterprise web systems.</tspan>
       </text>
-      <text x="48" y="196" font-size="12.5" fill="#94a3b8">
-        <tspan fill="#a855f7" font-weight="600">&gt; </tspan>Delivering high-impact corporate solutions for real clients: <tspan fill="#60a5fa" font-weight="600">GSW Solucoes Integradas</tspan> and <tspan fill="#60a5fa" font-weight="600">Newe Log</tspan>.
+      <text x="48" y="194" font-size="12" fill="#cbd5e1" letter-spacing="0.2">
+        <tspan fill="#a855f7" font-weight="600">&gt; </tspan>Building production-ready architectures &amp; enterprise web systems.
+      </text>
+      <text x="48" y="216" font-size="12" fill="#94a3b8" letter-spacing="0.2">
+        <tspan fill="#a855f7" font-weight="600">&gt; </tspan>Real-world client solutions: <tspan fill="#60a5fa" font-weight="600">GSW Solucoes Integradas</tspan> and <tspan fill="#60a5fa" font-weight="600">Newe Log</tspan>.
       </text>
     </g>
 
     <!-- CARD 2: COMPLETE TECH STACK (Spacious Frosted Glass Panel) -->
-    <rect x="30" y="234" width="760" height="282" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
-    <line x1="42" y1="235" x2="778" y2="235" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
-    <text x="48" y="260" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5" fill="#d8b4fe">
+    <rect x="30" y="252" width="760" height="294" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
+    <line x1="42" y1="253" x2="778" y2="253" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
+    <text x="48" y="278" font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="600" letter-spacing="0.5" fill="#d8b4fe">
       &gt; [ 01. COMPLETE TECH STACK ]
     </text>
 
     <!-- FRONT-END: Row 1 & 2 -->
-    <text x="48" y="289" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; FRONT-END:</text>
-    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="500">
+    <text x="48" y="308" font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; FRONT-END:</text>
+    <g font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="500">
       <!-- React -->
-      <g transform="translate(148, 274)">
+      <g transform="translate(148, 293)">
         <rect width="70" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <ellipse cx="12" cy="11" rx="6" ry="2.2" fill="none" stroke="#61dafb" stroke-width="0.8" />
         <ellipse cx="12" cy="11" rx="6" ry="2.2" fill="none" stroke="#61dafb" stroke-width="0.8" transform="rotate(60, 12, 11)" />
@@ -177,57 +185,57 @@
         <text x="24" y="15" fill="#f1f5f9">React</text>
       </g>
       <!-- Next.js -->
-      <g transform="translate(224, 274)">
-        <rect width="74" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(224, 293)">
+        <rect width="78" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="6" fill="#000000" stroke="#ffffff" stroke-width="0.8" />
         <text x="12" y="14.5" font-size="8" font-weight="bold" fill="#ffffff" text-anchor="middle">N</text>
         <text x="24" y="15" fill="#f1f5f9">Next.js</text>
       </g>
       <!-- TypeScript -->
-      <g transform="translate(304, 274)">
-        <rect width="94" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(308, 293)">
+        <rect width="98" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <rect x="6" y="5" width="12" height="12" rx="2" fill="#3178c6" />
         <text x="12" y="14" font-size="7.5" font-weight="bold" fill="#ffffff" text-anchor="middle">TS</text>
         <text x="24" y="15" fill="#f1f5f9">TypeScript</text>
       </g>
       <!-- JavaScript -->
-      <g transform="translate(404, 274)">
-        <rect width="92" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(412, 293)">
+        <rect width="98" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <rect x="6" y="5" width="12" height="12" rx="2" fill="#f7df1e" />
         <text x="12" y="14" font-size="7.5" font-weight="bold" fill="#000000" text-anchor="middle">JS</text>
         <text x="24" y="15" fill="#f1f5f9">JavaScript</text>
       </g>
       <!-- React Native -->
-      <g transform="translate(502, 274)">
-        <rect width="104" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(516, 293)">
+        <rect width="112" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="6" fill="#000020" stroke="#61dafb" stroke-width="0.8" />
         <text x="12" y="14" font-size="7" font-weight="bold" fill="#61dafb" text-anchor="middle">RN</text>
         <text x="24" y="15" fill="#f1f5f9">React Native</text>
       </g>
       <!-- Vite -->
-      <g transform="translate(612, 274)">
-        <rect width="62" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(634, 293)">
+        <rect width="64" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <polygon points="12,5 8,11 12,11 11,17 16,10 12,10" fill="#bd34fe" />
         <polygon points="12,6 9,11 12,11 11,16 15,10 12,10" fill="#ffea83" />
         <text x="23" y="15" fill="#f1f5f9">Vite</text>
       </g>
+
+      <!-- Row 2 -->
       <!-- Tailwind -->
-      <g transform="translate(680, 274)">
-        <rect width="82" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(148, 323)">
+        <rect width="84" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <path d="M 6 11 C 7 8 9 8 10 10 C 11 12 13 12 14 10 C 13 13 11 13 10 11 C 9 9 7 9 6 11 Z" fill="#38bdf8" />
         <text x="22" y="15" fill="#f1f5f9">Tailwind</text>
       </g>
-
-      <!-- Row 2 -->
       <!-- CSS Modules -->
-      <g transform="translate(148, 302)">
-        <rect width="106" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(238, 323)">
+        <rect width="108" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <rect x="6" y="5" width="12" height="12" rx="2" fill="#264de4" />
         <text x="12" y="14" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">CSS</text>
         <text x="24" y="15" fill="#f1f5f9">CSS Modules</text>
       </g>
       <!-- Figma -->
-      <g transform="translate(260, 302)">
+      <g transform="translate(352, 323)">
         <rect width="70" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="9" cy="8" r="2" fill="#f24e1e" />
         <circle cx="13" cy="8" r="2" fill="#ff7262" />
@@ -237,7 +245,7 @@
         <text x="22" y="15" fill="#f1f5f9">Figma</text>
       </g>
       <!-- HTML5 / CSS3 -->
-      <g transform="translate(336, 302)">
+      <g transform="translate(428, 323)">
         <rect width="112" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <polygon points="7,5 17,5 16.2,14.5 12,16.5 7.8,14.5" fill="#e34f26" />
         <polygon points="12,6 15.5,6 15,13.8 12,15.5" fill="#f06529" />
@@ -245,8 +253,8 @@
         <text x="23" y="15" fill="#f1f5f9">HTML5 / CSS3</text>
       </g>
       <!-- Bootstrap -->
-      <g transform="translate(454, 302)">
-        <rect width="90" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(546, 323)">
+        <rect width="94" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <rect x="6" y="5" width="12" height="12" rx="2" fill="#7952b3" />
         <text x="12" y="14" font-size="7.5" font-weight="bold" fill="#fff" text-anchor="middle">B</text>
         <text x="24" y="15" fill="#f1f5f9">Bootstrap</text>
@@ -254,24 +262,24 @@
     </g>
 
     <!-- BACK-END: Row 1 & 2 -->
-    <text x="48" y="347" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; BACK-END:</text>
-    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="500">
+    <text x="48" y="368" font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; BACK-END:</text>
+    <g font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="500">
       <!-- Node.js -->
-      <g transform="translate(148, 332)">
+      <g transform="translate(148, 353)">
         <rect width="80" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <polygon points="12,5 17,8 17,14 12,17 7,14 7,8" fill="#339933" />
         <text x="12" y="13.5" font-size="6.5" font-weight="bold" fill="#fff" text-anchor="middle">JS</text>
         <text x="24" y="15" fill="#f1f5f9">Node.js</text>
       </g>
       <!-- Express -->
-      <g transform="translate(234, 332)">
+      <g transform="translate(234, 353)">
         <rect width="80" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="6" fill="#30363d" />
         <text x="12" y="14" font-size="7.5" font-weight="bold" fill="#fff" text-anchor="middle">ex</text>
         <text x="24" y="15" fill="#f1f5f9">Express</text>
       </g>
       <!-- Java -->
-      <g transform="translate(320, 332)">
+      <g transform="translate(320, 353)">
         <rect width="70" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <path d="M 7 14 C 9 15 13 15 15 14" stroke="#5382a1" stroke-width="1.1" fill="none" />
         <path d="M 8 12 C 10 13 12 13 14 12 C 14.5 11 14 10 12 10 C 10 10 8.5 11 8 12 Z" fill="#e76f00" />
@@ -280,43 +288,43 @@
         <text x="21" y="15" fill="#f1f5f9">Java</text>
       </g>
       <!-- Spring Boot -->
-      <g transform="translate(396, 332)">
-        <rect width="100" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(396, 353)">
+        <rect width="102" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="6" fill="#6db33f" />
         <path d="M 9 14 C 9 11 11 8 15 8 C 15 11 13 14 9 14 Z" fill="#ffffff" />
         <text x="24" y="15" fill="#f1f5f9">Spring Boot</text>
       </g>
       <!-- Spring Cloud -->
-      <g transform="translate(502, 332)">
-        <rect width="106" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(504, 353)">
+        <rect width="108" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="6" fill="#30363d" stroke="#6db33f" stroke-width="0.8" />
         <text x="12" y="14" font-size="6.5" font-weight="bold" fill="#6db33f" text-anchor="middle">SC</text>
         <text x="24" y="15" fill="#f1f5f9">Spring Cloud</text>
       </g>
+
+      <!-- Row 2 -->
       <!-- Python -->
-      <g transform="translate(614, 332)">
-        <rect width="76" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(148, 383)">
+        <rect width="78" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <path d="M 7 7 L 11 7 L 11 9 L 14 9 L 14 13 L 12 13 L 12 15 L 8 15 L 8 13 L 6 13 L 6 9 L 9 9 L 9 7 Z" fill="#3776ab" />
         <circle cx="9" cy="8" r="0.8" fill="#fff" />
         <circle cx="11" cy="14" r="0.8" fill="#fff" />
         <text x="21" y="15" fill="#f1f5f9">Python</text>
       </g>
       <!-- Flask -->
-      <g transform="translate(696, 332)">
-        <rect width="68" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(232, 383)">
+        <rect width="70" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <path d="M 9 6 L 13 6 L 13 9 L 15 14 L 7 14 L 9 9 Z" fill="none" stroke="#fff" stroke-width="0.8" />
         <text x="21" y="15" fill="#f1f5f9">Flask</text>
       </g>
-
-      <!-- Row 2 -->
       <!-- Prisma ORM -->
-      <g transform="translate(148, 360)">
-        <rect width="98" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(308, 383)">
+        <rect width="100" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <polygon points="7,16 13,6 16,15" fill="#2d3748" stroke="#5a67d8" stroke-width="0.8" />
         <text x="23" y="15" fill="#f1f5f9">Prisma ORM</text>
       </g>
       <!-- JWT -->
-      <g transform="translate(252, 360)">
+      <g transform="translate(414, 383)">
         <rect width="68" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="11" cy="11" r="5" fill="#d63aff" />
         <text x="11" y="14" font-size="6" font-weight="bold" fill="#fff" text-anchor="middle">JWT</text>
@@ -325,10 +333,10 @@
     </g>
 
     <!-- DATA & AI: Row -->
-    <text x="48" y="405" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; DATA &amp; AI:</text>
-    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="500">
+    <text x="48" y="428" font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; DATA &amp; AI:</text>
+    <g font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="500">
       <!-- Pandas -->
-      <g transform="translate(148, 390)">
+      <g transform="translate(148, 413)">
         <rect width="80" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <rect x="6" y="6" width="3" height="10" fill="#150458" />
         <rect x="10" y="9" width="3" height="7" fill="#e70488" />
@@ -336,22 +344,22 @@
         <text x="23" y="15" fill="#f1f5f9">Pandas</text>
       </g>
       <!-- NumPy -->
-      <g transform="translate(234, 390)">
+      <g transform="translate(234, 413)">
         <rect width="78" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <rect x="6" y="5" width="12" height="12" rx="2" fill="#013243" stroke="#4dabcf" stroke-width="0.8" />
         <text x="12" y="14" font-size="7" font-weight="bold" fill="#4dabcf" text-anchor="middle">NP</text>
         <text x="24" y="15" fill="#f1f5f9">NumPy</text>
       </g>
       <!-- Jupyter -->
-      <g transform="translate(318, 390)">
+      <g transform="translate(318, 413)">
         <rect width="82" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="5" fill="#f37626" />
         <circle cx="12" cy="11" r="2.5" fill="#1c2333" />
         <text x="23" y="15" fill="#f1f5f9">Jupyter</text>
       </g>
       <!-- LLMs / AI -->
-      <g transform="translate(406, 390)">
-        <rect width="88" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(406, 413)">
+        <rect width="92" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <path d="M 11 5 Q 11 11 6 11 Q 11 11 11 17 Q 11 11 16 11 Q 11 11 11 5 Z" fill="#7ee787" />
         <path d="M 14 7 Q 14 9 12.5 9 Q 14 9 14 11 Q 14 9 15.5 9 Q 14 9 14 7 Z" fill="#a78bfa" />
         <text x="21" y="15" fill="#f1f5f9">LLMs / AI</text>
@@ -359,31 +367,31 @@
     </g>
 
     <!-- DATABASES: Row -->
-    <text x="48" y="447" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; DATABASES:</text>
-    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="500">
+    <text x="48" y="472" font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; DATABASES:</text>
+    <g font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="500">
       <!-- PostgreSQL -->
-      <g transform="translate(148, 432)">
-        <rect width="98" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(148, 457)">
+        <rect width="102" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="6" fill="#336791" />
         <text x="12" y="14.5" font-size="7.5" font-weight="bold" fill="#ffffff" text-anchor="middle">PG</text>
         <text x="25" y="15" fill="#f1f5f9">PostgreSQL</text>
       </g>
       <!-- MySQL -->
-      <g transform="translate(252, 432)">
+      <g transform="translate(256, 457)">
         <rect width="74" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <ellipse cx="12" cy="7" rx="5" ry="1.8" fill="#00758f" />
         <path d="M 7 7 L 7 13 Q 12 16 17 13 L 17 7 Z" fill="none" stroke="#00758f" stroke-width="0.9" />
         <text x="23" y="15" fill="#f1f5f9">MySQL</text>
       </g>
       <!-- MongoDB -->
-      <g transform="translate(332, 432)">
+      <g transform="translate(336, 457)">
         <rect width="88" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <path d="M 12 5 C 15 8 15.5 11 12 16 C 8.5 11 9 8 12 5 Z" fill="#47a248" />
         <line x1="12" y1="6" x2="12" y2="15" stroke="#ffffff" stroke-width="0.6" />
         <text x="23" y="15" fill="#f1f5f9">MongoDB</text>
       </g>
       <!-- Redis -->
-      <g transform="translate(426, 432)">
+      <g transform="translate(430, 457)">
         <rect width="68" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <polygon points="11,6 16,8.5 11,11 6,8.5" fill="#dc382d" />
         <polygon points="6,9 11,11.5 16,9 16,12 11,14.5 6,12" fill="#a3241b" />
@@ -391,14 +399,14 @@
         <text x="22" y="15" fill="#f1f5f9">Redis</text>
       </g>
       <!-- Cassandra -->
-      <g transform="translate(500, 432)">
-        <rect width="92" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(504, 457)">
+        <rect width="94" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="5.5" fill="#14496b" stroke="#3288a2" stroke-width="0.8" />
         <circle cx="12" cy="11" r="2.5" fill="#ffffff" />
         <text x="24" y="15" fill="#f1f5f9">Cassandra</text>
       </g>
       <!-- Neo4j -->
-      <g transform="translate(598, 432)">
+      <g transform="translate(604, 457)">
         <rect width="72" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="9" cy="11" r="2.5" fill="#008cc1" />
         <circle cx="15" cy="8" r="2" fill="#008cc1" />
@@ -410,11 +418,11 @@
     </g>
 
     <!-- DEVOPS: Row -->
-    <text x="48" y="489" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; DEVOPS:</text>
-    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="500">
+    <text x="48" y="516" font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; DEVOPS:</text>
+    <g font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="500">
       <!-- Docker -->
-      <g transform="translate(148, 474)">
-        <rect width="76" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(148, 501)">
+        <rect width="78" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <rect x="6" y="8" width="2" height="1.8" fill="#2496ed" />
         <rect x="9" y="8" width="2" height="1.8" fill="#2496ed" />
         <rect x="12" y="8" width="2" height="1.8" fill="#2496ed" />
@@ -422,36 +430,36 @@
         <text x="23" y="15" fill="#f1f5f9">Docker</text>
       </g>
       <!-- Git & GitHub -->
-      <g transform="translate(230, 474)">
-        <rect width="104" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(232, 501)">
+        <rect width="108" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="6" fill="#f05032" />
         <text x="12" y="14.5" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">Git</text>
         <text x="24" y="15" fill="#f1f5f9">Git &amp; GitHub</text>
       </g>
       <!-- GitHub Actions -->
-      <g transform="translate(340, 474)">
-        <rect width="116" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(346, 501)">
+        <rect width="120" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="6" fill="#2088ff" />
         <text x="12" y="14.5" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">CI</text>
         <text x="24" y="15" fill="#f1f5f9">GitHub Actions</text>
       </g>
       <!-- Postman -->
-      <g transform="translate(462, 474)">
-        <rect width="82" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(472, 501)">
+        <rect width="84" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="6" fill="#ff6c37" />
         <text x="12" y="14.5" font-size="6.5" font-weight="bold" fill="#fff" text-anchor="middle">PM</text>
         <text x="24" y="15" fill="#f1f5f9">Postman</text>
       </g>
       <!-- Linux -->
-      <g transform="translate(550, 474)">
-        <rect width="72" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(562, 501)">
+        <rect width="74" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="6" fill="#fcc624" />
         <text x="12" y="14.5" font-size="7" font-weight="bold" fill="#000" text-anchor="middle">L</text>
         <text x="24" y="15" fill="#f1f5f9">Linux</text>
       </g>
       <!-- AWS EC2 -->
-      <g transform="translate(628, 474)">
-        <rect width="84" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+      <g transform="translate(642, 501)">
+        <rect width="86" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
         <circle cx="12" cy="11" r="6" fill="#ff9900" />
         <text x="12" y="14.5" font-size="6" font-weight="bold" fill="#000" text-anchor="middle">AWS</text>
         <text x="24" y="15" fill="#f1f5f9">AWS EC2</text>
@@ -459,87 +467,87 @@
     </g>
 
     <!-- CARD 3: ENTERPRISE PROJECTS (Spacious Frosted Glass Panel) -->
-    <rect x="30" y="534" width="760" height="172" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
-    <line x1="42" y1="535" x2="778" y2="535" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
-    <text x="48" y="558" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5" fill="#d8b4fe">
+    <rect x="30" y="560" width="760" height="176" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
+    <line x1="42" y1="561" x2="778" y2="561" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
+    <text x="48" y="584" font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="600" letter-spacing="0.5" fill="#d8b4fe">
       &gt; [ 02. ENTERPRISE PROJECTS FOR REAL CLIENTS ]
     </text>
 
     <!-- Project 1: GSW -->
-    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif">
-      <text x="48" y="584" font-size="13.5" font-weight="600" fill="#93c5fd">
+    <g font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace">
+      <text x="48" y="610" font-size="12.5" font-weight="600" fill="#93c5fd" letter-spacing="0.2">
         &gt; GSW Solucoes Integradas
-        <tspan fill="#94a3b8" font-weight="400" font-size="12.5"> | Enterprise Time-Tracking &amp; Financial Governance System</tspan>
+        <tspan fill="#94a3b8" font-weight="400" font-size="11.5"> | Enterprise Time-Tracking System</tspan>
       </text>
-      <text x="48" y="606" font-size="12.5" fill="#cbd5e1" font-weight="400">
-        <tspan fill="#a855f7" font-weight="600">&gt; </tspan>Squad resource allocation, real-time time tracking, and financial audit pipelines for distributed squads.
+      <text x="48" y="632" font-size="11.5" fill="#cbd5e1" font-weight="400" letter-spacing="0.1">
+        <tspan fill="#a855f7" font-weight="600">&gt; </tspan>Squad resource allocation, real-time tracking &amp; financial audit pipelines.
       </text>
-      <text x="48" y="628" font-size="12">
+      <text x="48" y="654" font-size="11.5" letter-spacing="0.1">
         <tspan fill="#a855f7" font-weight="600">&gt; </tspan><tspan fill="#86efac" font-weight="600">Stack:</tspan>
         <tspan fill="#f1f5f9"> Next.js &#8226; TypeScript &#8226; Spring Boot &#8226; Spring Cloud &#8226; MySQL &#8226; Docker</tspan>
       </text>
 
       <!-- Project 2: Newe Log -->
-      <text x="48" y="656" font-size="13.5" font-weight="600" fill="#93c5fd">
+      <text x="48" y="682" font-size="12.5" font-weight="600" fill="#93c5fd" letter-spacing="0.2">
         &gt; Newe Log
-        <tspan fill="#94a3b8" font-weight="400" font-size="12.5"> | Transportation Logistics &amp; Commercial CRM Platform</tspan>
+        <tspan fill="#94a3b8" font-weight="400" font-size="11.5"> | Transportation Logistics &amp; Commercial CRM Platform</tspan>
       </text>
-      <text x="48" y="678" font-size="12.5" fill="#cbd5e1" font-weight="400">
-        <tspan fill="#a855f7" font-weight="600">&gt; </tspan>Sales pipeline centralization, automated operational checklist verification, and real-time KPI dashboards.
+      <text x="48" y="704" font-size="11.5" fill="#cbd5e1" font-weight="400" letter-spacing="0.1">
+        <tspan fill="#a855f7" font-weight="600">&gt; </tspan>Sales pipeline centralization &amp; real-time operational KPI dashboards.
       </text>
-      <text x="48" y="700" font-size="12">
+      <text x="48" y="726" font-size="11.5" letter-spacing="0.1">
         <tspan fill="#a855f7" font-weight="600">&gt; </tspan><tspan fill="#86efac" font-weight="600">Stack:</tspan>
         <tspan fill="#f1f5f9"> React &#8226; Node.js &#8226; TypeScript &#8226; MySQL &#8226; Express</tspan>
       </text>
     </g>
 
     <!-- CARD 4: CONTRIBUTION STATISTICS (Spacious Floating Glass Pod) -->
-    <rect x="30" y="724" width="760" height="142" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
-    <line x1="42" y1="725" x2="778" y2="725" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
-    <text x="48" y="748" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" letter-spacing="0.5" fill="#d8b4fe">
+    <rect x="30" y="754" width="760" height="142" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
+    <line x1="42" y1="755" x2="778" y2="755" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
+    <text x="48" y="778" font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="600" letter-spacing="0.5" fill="#d8b4fe">
       &gt; [ 03. CONTRIBUTION STATISTICS ]
     </text>
 
     <!-- Vertical Dividers with Liquid Glass Fade -->
-    <line x1="284" y1="758" x2="284" y2="852" stroke="url(#dividerFade)" stroke-width="1.2" />
-    <line x1="536" y1="758" x2="536" y2="852" stroke="url(#dividerFade)" stroke-width="1.2" />
+    <line x1="284" y1="788" x2="284" y2="882" stroke="url(#dividerFade)" stroke-width="1.2" />
+    <line x1="536" y1="788" x2="536" y2="882" stroke="url(#dividerFade)" stroke-width="1.2" />
 
     <!-- Total Contributions -->
-    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" text-anchor="middle">
-      <text x="167" y="794" font-size="34" font-weight="700" fill="#f87171" letter-spacing="-0.5">466</text>
-      <text x="167" y="820" font-size="13" font-weight="500" fill="#f472b6">Total Contributions</text>
-      <text x="167" y="842" font-size="11.5" fill="#94a3b8">Mar 13, 2024 - Present</text>
+    <g font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" text-anchor="middle">
+      <text x="167" y="824" font-size="34" font-weight="700" fill="#f87171" letter-spacing="-0.5">466</text>
+      <text x="167" y="850" font-size="12" font-weight="500" fill="#f472b6">Total Contributions</text>
+      <text x="167" y="872" font-size="11" fill="#94a3b8">Mar 13, 2024 - Present</text>
     </g>
 
     <!-- Current Streak (Clean Purple Ring and Flame - Zero Blurry Glow) -->
     <g text-anchor="middle">
-      <circle cx="410" cy="786" r="26" fill="none" stroke="#7c3aed" stroke-width="3.5" />
-      <path d="M 410 752 C 405 759 402 763 402 768 C 402 773 405 776 410 776 C 415 776 418 773 418 768 C 418 763 415 759 410 752 Z" fill="#c4b5fd" />
-      <path d="M 410 760 C 407 764 406 766 406 769 C 406 771 407 773 410 773 C 413 773 414 771 414 769 C 414 766 413 764 410 760 Z" fill="#60a5fa" />
-      <text x="410" y="794" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro', 'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="700" fill="#60a5fa">0</text>
-      <text x="410" y="824" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Current Streak</text>
-      <text x="410" y="844" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#94a3b8">Nov 7</text>
+      <circle cx="410" cy="816" r="26" fill="none" stroke="#7c3aed" stroke-width="3.5" />
+      <path d="M 410 782 C 405 789 402 793 402 798 C 402 803 405 806 410 806 C 415 806 418 803 418 798 C 418 793 415 789 410 782 Z" fill="#c4b5fd" />
+      <path d="M 410 790 C 407 794 406 796 406 799 C 406 801 407 803 410 803 C 413 803 414 801 414 799 C 414 796 413 794 410 790 Z" fill="#60a5fa" />
+      <text x="410" y="824" font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="24" font-weight="700" fill="#60a5fa">0</text>
+      <text x="410" y="854" font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="12.5" font-weight="600" fill="#ffffff">Current Streak</text>
+      <text x="410" y="874" font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#94a3b8">Nov 7</text>
     </g>
 
     <!-- Longest Streak -->
-    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" text-anchor="middle">
-      <text x="648" y="794" font-size="34" font-weight="700" fill="#f87171" letter-spacing="-0.5">8</text>
-      <text x="648" y="820" font-size="13" font-weight="500" fill="#f472b6">Longest Streak</text>
-      <text x="648" y="842" font-size="11.5" fill="#94a3b8">Oct 19 - Oct 26</text>
+    <g font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" text-anchor="middle">
+      <text x="648" y="824" font-size="34" font-weight="700" fill="#f87171" letter-spacing="-0.5">8</text>
+      <text x="648" y="850" font-size="12" font-weight="500" fill="#f472b6">Longest Streak</text>
+      <text x="648" y="872" font-size="11" fill="#94a3b8">Oct 19 - Oct 26</text>
     </g>
 
     <!-- CARD 5: DEGREE & CONTACTS (Spacious Frosted Glass Panel) -->
-    <rect x="30" y="884" width="760" height="74" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
-    <line x1="42" y1="885" x2="778" y2="885" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
-    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif" font-size="12.5">
-      <text x="48" y="912">
+    <rect x="30" y="914" width="760" height="74" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
+    <line x1="42" y1="915" x2="778" y2="915" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
+    <g font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace" font-size="12">
+      <text x="48" y="942" letter-spacing="0.2">
         <tspan fill="#a855f7" font-weight="600">&gt; </tspan>
         <tspan fill="#c4b5fd" font-weight="600">DEGREE:</tspan>
         <tspan fill="#4ade80" font-weight="600"> B.S. in Multiplatform Software Development</tspan>
         <tspan fill="#94a3b8"> at </tspan>
         <tspan fill="#ffffff" font-weight="600">FATEC SJC</tspan>
       </text>
-      <text x="48" y="938">
+      <text x="48" y="968" letter-spacing="0.2">
         <tspan fill="#a855f7" font-weight="600">&gt; </tspan>
         <tspan fill="#c4b5fd" font-weight="600">LOCATION:</tspan>
         <tspan fill="#f1f5f9"> Sao Jose dos Campos, SP, Brazil</tspan>
