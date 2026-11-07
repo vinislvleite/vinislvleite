@@ -4,29 +4,29 @@
       <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7c3aed" flood-opacity="0.22" />
     </filter>
 
-    <!-- Máscara animada Frase 1 perfeitamente sincronizada com o cursor -->
+    <!-- Animated Mask Phrase 1 (in sync with cursor) -->
     <clipPath id="clipPhrase1">
       <rect x="28" y="90" width="0" height="35">
         <animate attributeName="width" values="0; 375; 375; 0; 0; 0; 0" keyTimes="0; 0.30; 0.475; 0.50; 0.50; 0.975; 1" dur="8s" repeatCount="indefinite" />
       </rect>
     </clipPath>
 
-    <!-- Máscara animada Frase 2 perfeitamente sincronizada com o cursor -->
+    <!-- Animated Mask Phrase 2 (in sync with cursor) -->
     <clipPath id="clipPhrase2">
       <rect x="28" y="90" width="0" height="35">
-        <animate attributeName="width" values="0; 0; 0; 0; 455; 455; 0" keyTimes="0; 0.475; 0.50; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 0; 0; 0; 465; 465; 0" keyTimes="0; 0.475; 0.50; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
       </rect>
     </clipPath>
   </defs>
 
-  <!-- Janela Principal -->
+  <!-- Main Window -->
   <rect x="2" y="2" width="796" height="896" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
 
-  <!-- Barra macOS -->
+  <!-- macOS Header Bar -->
   <path d="M 2 12 Q 2 2 12 2 L 788 2 Q 798 2 798 12 L 798 38 L 2 38 Z" fill="#161b22" />
   <line x1="2" y1="38" x2="798" y2="38" stroke="#30363d" stroke-width="1" />
 
-  <!-- Bolinhas macOS -->
+  <!-- macOS Window Dots -->
   <circle cx="24" cy="20" r="5.5" fill="#ff5f56" />
   <circle cx="42" cy="20" r="5.5" fill="#ffbd2e" />
   <circle cx="60" cy="20" r="5.5" fill="#27c93f" />
@@ -35,7 +35,7 @@
     vinicius@workstation: ~ (zsh)
   </text>
 
-  <!-- Linha de Prompt -->
+  <!-- Shell Prompt Line -->
   <g font-family="'Fira Code', Consolas, monospace" font-size="14">
     <text x="28" y="68">
       <tspan fill="#3fb950" font-weight="600">vinicius@developer</tspan>
@@ -47,39 +47,39 @@
   </g>
   <line x1="28" y1="80" x2="770" y2="80" stroke="#21262d" stroke-width="1" />
 
-  <!-- Frase 1 -->
+  <!-- Typewriter Phrase 1 -->
   <g clip-path="url(#clipPhrase1)">
     <text x="28" y="112" font-family="'Fira Code', Consolas, monospace" font-size="15" font-weight="600" fill="#a78bfa">
       &gt; Mastering React, Next.js and TypeScript
     </text>
   </g>
 
-  <!-- Frase 2 -->
+  <!-- Typewriter Phrase 2 -->
   <g clip-path="url(#clipPhrase2)">
     <text x="28" y="112" font-family="'Fira Code', Consolas, monospace" font-size="15" font-weight="600" fill="#a78bfa">
-      &gt; Full-Stack Developer | Foco em Front-End Moderno
+      &gt; Full-Stack Developer | Modern Front-End Specialist
     </text>
   </g>
 
-  <!-- Cursor em sincronia milimétrica -->
+  <!-- Dynamic Typing Cursor in exact synchrony -->
   <rect x="28" y="96" width="8" height="18" fill="#ffffff">
     <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
-    <animate attributeName="x" values="28; 404; 404; 28; 484; 484; 28" keyTimes="0; 0.30; 0.475; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="x" values="28; 404; 404; 28; 494; 494; 28" keyTimes="0; 0.30; 0.475; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
   </rect>
 
   <!-- ABOUT -->
   <rect x="28" y="130" width="744" height="46" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
   <text x="44" y="158" font-family="'Fira Code', Consolas, monospace" font-size="12" fill="#c9d1d9">
-    <tspan fill="#7ee787" font-weight="600">ABOUT:</tspan> Cursando Desenvolvimento de Software na FATEC SJC e atuando com clientes reais (GSW e Newe Log).
+    <tspan fill="#7ee787" font-weight="600">ABOUT:</tspan> Software Engineering student at FATEC SJC, building enterprise solutions for real clients (GSW &amp; Newe Log).
   </text>
 
-  <!-- SEÇÃO 1: STACK COMPLETA EXTRAÍDA DE TODOS OS REPOSITÓRIOS -->
+  <!-- SECTION 1: COMPLETE TECH STACK -->
   <rect x="28" y="186" width="744" height="268" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
   <text x="44" y="208" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
-    [ 01. STACK TECNOLOGICA COMPLETA DOS PROJETOS ]
+    [ 01. COMPLETE TECH STACK ]
   </text>
 
-  <!-- FRONT-END: Linha 1 -->
+  <!-- FRONT-END: Row 1 -->
   <text x="44" y="232" font-family="'Fira Code', monospace" font-size="10.5" font-weight="bold" fill="#a78bfa">FRONT-END:</text>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
     <!-- React -->
@@ -134,7 +134,7 @@
     </g>
   </g>
 
-  <!-- FRONT-END: Linha 2 -->
+  <!-- FRONT-END: Row 2 -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
     <!-- CSS Modules -->
     <g transform="translate(130, 245)">
@@ -168,7 +168,7 @@
     </g>
   </g>
 
-  <!-- BACK-END: Linha 1 -->
+  <!-- BACK-END: Row 1 -->
   <text x="44" y="286" font-family="'Fira Code', monospace" font-size="10.5" font-weight="bold" fill="#a78bfa">BACK-END:</text>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
     <!-- Node.js -->
@@ -213,7 +213,7 @@
       <circle cx="10" cy="13" r="0.8" fill="#fff" />
       <text x="18" y="14" fill="#e6edf3">Python</text>
     </g>
-    <!-- Flask (Solicitado) -->
+    <!-- Flask -->
     <g transform="translate(660, 273)">
       <rect width="64" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <path d="M 8 5 L 12 5 L 12 8 L 14 13 L 6 13 L 8 8 Z" fill="none" stroke="#fff" stroke-width="0.8" />
@@ -221,7 +221,7 @@
     </g>
   </g>
 
-  <!-- BACK-END: Linha 2 -->
+  <!-- BACK-END: Row 2 -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
     <!-- Prisma ORM -->
     <g transform="translate(130, 299)">
@@ -238,10 +238,10 @@
     </g>
   </g>
 
-  <!-- DATA & MACHINE LEARNING (PANDAS, NUMPY, JUPYTER, LLM) -->
-  <text x="44" y="340" font-family="'Fira Code', monospace" font-size="10.5" font-weight="bold" fill="#a78bfa">DATA / IA:</text>
+  <!-- DATA & AI: Pandas, NumPy, Jupyter, LLMs -->
+  <text x="44" y="340" font-family="'Fira Code', monospace" font-size="10.5" font-weight="bold" fill="#a78bfa">DATA &amp; AI:</text>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
-    <!-- Pandas (Solicitado) -->
+    <!-- Pandas -->
     <g transform="translate(130, 327)">
       <rect width="78" height="20" rx="4" fill="#1c2333" stroke="#150458" stroke-width="1.2" />
       <rect x="5" y="5" width="3" height="10" fill="#150458" />
@@ -263,18 +263,18 @@
       <circle cx="10" cy="10" r="2.5" fill="#1c2333" />
       <text x="19" y="14" fill="#e6edf3">Jupyter</text>
     </g>
-    <!-- LLMs / IA -->
+    <!-- LLMs / AI -->
     <g transform="translate(382, 327)">
       <rect width="84" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <text x="8" y="14" font-size="11" fill="#7ee787">✦</text>
-      <text x="18" y="14" fill="#e6edf3">LLMs / IA</text>
+      <text x="18" y="14" fill="#e6edf3">LLMs / AI</text>
     </g>
   </g>
 
-  <!-- BANCOS DE DADOS (POSTGRESQL INCLUÍDO COM DESTAQUE) -->
+  <!-- DATABASES -->
   <text x="44" y="380" font-family="'Fira Code', monospace" font-size="10.5" font-weight="bold" fill="#a78bfa">DATABASES:</text>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
-    <!-- PostgreSQL (Destaque solicitado) -->
+    <!-- PostgreSQL -->
     <g transform="translate(130, 367)">
       <rect width="94" height="20" rx="4" fill="#1c2333" stroke="#336791" stroke-width="1.2" />
       <circle cx="10" cy="10" r="6" fill="#336791" />
@@ -365,33 +365,33 @@
     </g>
   </g>
 
-  <!-- SEÇÃO 2: PROJETOS COM CLIENTES REAIS -->
+  <!-- SECTION 2: ENTERPRISE PROJECTS FOR REAL CLIENTS -->
   <rect x="28" y="468" width="744" height="166" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
   <text x="44" y="492" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
-    [ 02. PROJETOS CORPORATIVOS COM CLIENTES REAIS ]
+    [ 02. ENTERPRISE PROJECTS FOR REAL CLIENTS ]
   </text>
 
-  <!-- Projeto 1: GSW -->
+  <!-- Project 1: GSW -->
   <g font-family="'Fira Code', Consolas, monospace">
     <text x="44" y="518" font-size="13" font-weight="bold" fill="#58a6ff">
       &gt; GSW Solucoes Integradas
-      <tspan fill="#8b949e" font-weight="normal" font-size="12"> | Sistema de Apontamento de Horas &amp; Financeiro</tspan>
+      <tspan fill="#8b949e" font-weight="normal" font-size="12"> | Enterprise Time-Tracking &amp; Financial System</tspan>
     </text>
     <text x="58" y="537" font-size="12" fill="#8b949e">
-      Gestao de horas, alocacao de squads e auditoria financeira de equipes distribuidas.
+      Squad allocation, real-time time tracking, and financial governance for distributed teams.
     </text>
     <text x="58" y="556" font-size="12">
       <tspan fill="#7ee787">Stack:</tspan>
       <tspan fill="#e6edf3"> Next.js • TypeScript • Spring Boot • Spring Cloud • MySQL • Docker</tspan>
     </text>
 
-    <!-- Projeto 2: Newe Log -->
+    <!-- Project 2: Newe Log -->
     <text x="44" y="582" font-size="13" font-weight="bold" fill="#58a6ff">
       &gt; Newe Log
-      <tspan fill="#8b949e" font-weight="normal" font-size="12"> | Sistema CRM &amp; Gestao Comercial de Transportes</tspan>
+      <tspan fill="#8b949e" font-weight="normal" font-size="12"> | Transportation Logistics &amp; Commercial CRM Platform</tspan>
     </text>
     <text x="58" y="601" font-size="12" fill="#8b949e">
-      Centralizacao de funil de vendas, automacao de checklists e dashboards operacionais.
+      Sales pipeline management, automated operational checklists, and real-time dashboards.
     </text>
     <text x="58" y="620" font-size="12">
       <tspan fill="#7ee787">Stack:</tspan>
@@ -399,13 +399,13 @@
     </text>
   </g>
 
-  <!-- SEÇÃO 3: ESTATISTICAS DE DESENVOLVIMENTO (INTEGRADA NO TERMINAL) -->
+  <!-- SECTION 3: CONTRIBUTION STATISTICS -->
   <rect x="28" y="648" width="744" height="148" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
   <text x="44" y="670" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
-    [ 03. ESTATISTICAS DE CONTRIBUICAO ]
+    [ 03. CONTRIBUTION STATISTICS ]
   </text>
 
-  <!-- Divisórias verticais -->
+  <!-- Vertical Dividers -->
   <line x1="275" y1="678" x2="275" y2="780" stroke="#30363d" stroke-width="1.2" />
   <line x1="525" y1="678" x2="525" y2="780" stroke="#30363d" stroke-width="1.2" />
 
@@ -416,7 +416,7 @@
     <text x="151" y="764" font-size="11.5" fill="#8b949e">Mar 13, 2024 - Present</text>
   </g>
 
-  <!-- Current Streak com Anel Roxo e Chama -->
+  <!-- Current Streak with Purple Ring and Flame -->
   <g text-anchor="middle">
     <circle cx="400" cy="706" r="26" fill="none" stroke="#7c3aed" stroke-width="3.5" />
     <path d="M 400 672 C 395 679 392 683 392 688 C 392 693 395 696 400 696 C 405 696 408 693 408 688 C 408 683 405 679 400 672 Z" fill="#a78bfa" />
@@ -433,18 +433,18 @@
     <text x="649" y="764" font-size="11.5" fill="#8b949e">Oct 19 - Oct 26</text>
   </g>
 
-  <!-- SEÇÃO 4: GRADUAÇÃO FATEC SJC & CONTATOS -->
+  <!-- SECTION 4: DEGREE & CONTACTS -->
   <rect x="28" y="810" width="744" height="64" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
   <g font-family="'Fira Code', Consolas, monospace" font-size="12">
     <text x="44" y="834">
-      <tspan fill="#a78bfa" font-weight="bold">GRADUACAO:</tspan>
-      <tspan fill="#7ee787" font-weight="bold"> Desenvolvimento de Software Multiplataforma</tspan>
-      <tspan fill="#8b949e"> na </tspan>
+      <tspan fill="#a78bfa" font-weight="bold">DEGREE:</tspan>
+      <tspan fill="#7ee787" font-weight="bold"> B.S. in Multiplatform Software Development</tspan>
+      <tspan fill="#8b949e"> at </tspan>
       <tspan fill="#ffffff" font-weight="bold">FATEC SJC</tspan>
     </text>
     <text x="44" y="858">
-      <tspan fill="#a78bfa" font-weight="bold">LOCAL:</tspan>
-      <tspan fill="#e6edf3"> Sao Jose dos Campos, SP</tspan>
+      <tspan fill="#a78bfa" font-weight="bold">LOCATION:</tspan>
+      <tspan fill="#e6edf3"> Sao Jose dos Campos, SP, Brazil</tspan>
       <tspan fill="#8b949e">  |  </tspan>
       <tspan fill="#a78bfa" font-weight="bold">LINKEDIN:</tspan>
       <tspan fill="#58a6ff"> /in/vinicius-leite-4792b02ba</tspan>
