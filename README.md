@@ -1,72 +1,88 @@
+<div align="center">
+
+  <!-- HEADER TERMINAL ESTILIZADO (Funciona direto sem precisar de arquivo extra) -->
+  <a href="https://linkedin.com/in/vin%C3%ADcius-leite-4792b02ba/">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2400&pause=1000&color=A78BFA&background=0D1117&center=true&vCenter=true&width=750&height=120&lines=vinicius%40developer%3A~%24+neofetch+--profile;%3E+Full-Stack+Developer+%7C+Foco+em+Front-End;%3E+Solu%C3%A7%C3%B5es+web+modernas+para+clientes+reais;%3E+Stack%3A+React+%E2%80%A2+Next.js+%E2%80%A2+TypeScript+%E2%80%A2+Node+%E2%80%A2+Spring" alt="Terminal Shell" />
+  </a>
+
+  <br/><br/>
+
+  <!-- LINKS E STATUS -->
+  <a href="https://www.linkedin.com/in/vin%C3%ADcius-leite-4792b02ba/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:seu-email@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <img src="https://img.shields.io/badge/Status-Disponível_para_contratação-059669?style=for-the-badge" />
+
+</div>
+
+---
+
+## Tecnologias
+
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2E1065,100:A78BFA&height=230&section=header&text=Vin%C3%ADcius%20Leite&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20Foco%20em%20Front-End&descAlignY=58&descSize=18&fontFamily=Poppins" width="100%" />
-</p>
-
-<img src="https://custom-icon-badges.demolab.com/badge/Desenvolvedor-FullStack-7C3AED?style=for-the-badge&logo=code&logoColor=white&labelColor=2E1065" />
-
-Full-Stack Developer com foco em Front-End. Estudante de Desenvolvimento de Software na FATEC São José dos Campos,atuando em projetos com clientes reais.
-
-<p align="left">
-  <a href="https://www.linkedin.com/in/vin%C3%ADcius-leite-4792b02ba/">
-    <img
-      alt="LinkedIn"
-      title="Conecte-se comigo no LinkedIn"
-      src="https://custom-icon-badges.demolab.com/badge/LinkedIn-Conectar-6D28D9?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=2E1065"
-    />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=ts,react,nextjs,vite,tailwind,figma,nodejs,spring,python,docker,mysql,mongodb,redis&perline=7" />
   </a>
 </p>
 
----
-
-### Linguagens de programação
-
-<p align="left">
-  <img alt="JavaScript" title="JavaScript" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-  <img alt="TypeScript" title="TypeScript" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-  <img alt="Python" title="Python" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-  <img alt="Java" title="Java" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
-</p>
-
-### Front-end
-
-<p align="left">
-  <img alt="React" title="React" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
-  <img alt="Next.js" title="Next.js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
-  <img alt="Vite.js" title="Vite.js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
-  <img alt="CSS Modules" title="CSS Modules" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-  <img alt="Figma" title="Figma" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-</p>
-
-### Back-end
-
-<p align="left">
-  <img alt="Node.js" title="Node.js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
-  <img alt="Spring Boot" title="Spring Boot" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
-  <img alt="Docker" title="Docker" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
-</p>
-
-### Banco de dados
-
-<p align="left">
-  <img alt="MySQL" title="MySQL" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
-  <img alt="MongoDB" title="MongoDB" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" />
-  <img alt="Redis" title="Redis" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg" />
-  <img alt="Apache Cassandra" title="Apache Cassandra" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cassandra/cassandra-original.svg" />
-  <img alt="Neo4j" title="Neo4j" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neo4j/neo4j-original.svg" />
-</p>
+| Camada | Tecnologias |
+| :--- | :--- |
+| **Front-End** | React, Next.js, Vite, TypeScript, Tailwind CSS, CSS Modules, Figma |
+| **Back-End** | Node.js, Spring Boot (Java), Python |
+| **Bancos de Dados** | MySQL, MongoDB, Redis, Apache Cassandra, Neo4j |
+| **DevOps & Ferramentas** | Docker, Git, GitHub Actions, Postman, Linux |
 
 ---
 
-<img src="https://custom-icon-badges.demolab.com/badge/Estatísticas-2E1065?style=for-the-badge&logo=graph&logoColor=white" />
+## Projetos com Clientes Reais
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h4>Sistema Web Corporativo (Cliente Ativo)</h4>
+      <p>Desenvolvimento ponta a ponta de aplicação para automação de processos de negócio. Foco em arquitetura escalável, autenticação segura e interface reativa.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js" />
+        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
+      </p>
+      <br/>
+      <a href="https://github.com/vinislvleite/seu-repositorio">
+        <img src="https://img.shields.io/badge/Ver_Repositório-7C3AED?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <h4>Dashboard Analítico em Tempo Real</h4>
+      <p>Plataforma analítica desenvolvida para monitoramento de métricas operacionais, consumo de APIs REST e visualização modular de alto volume de dados.</p>
+      <p>
+        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+        <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring&logoColor=white" />
+        <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
+      </p>
+      <br/>
+      <a href="https://github.com/vinislvleite/seu-repositorio">
+        <img src="https://img.shields.io/badge/Ver_Repositório-7C3AED?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Estatísticas de Desenvolvimento
+
+<div align="center">
+  <!-- Servidor espelho 100% ativo (200 OK) -->
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=vinislvleite&show_icons=true&theme=radical&bg_color=0d1117&border_color=30363d&title_color=ffffff&text_color=c9d1d9&icon_color=a78bfa" height="160" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=vinislvleite&layout=compact&theme=radical&bg_color=0d1117&border_color=30363d&title_color=ffffff&text_color=c9d1d9" height="160" />
+</div>
+
 <br/>
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=vinislvleite&theme=dracula" height="200" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=vinislvleite&background=1A1025&border=7C3AED&stroke=A78BFA&ring=A78BFA&fire=A78BFA&currStreakLabel=ffffff&sideLabels=c9a4ff&currStreakNum=ffffff&sideNums=ffffff&dates=8B7FB8&hide_border=false" height="200" />
-</p>
-
-<br/>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vinislvleite&bg_color=1a1025&color=c9a4ff&line=a78bfa&point=ffffff&area=true&area_color=7c3aed&title_color=ffffff&hide_border=true" width="100%" />
-</p>
+<div align="center">
+  <!-- Streak stats ativo e com paleta roxa do GitHub -->
+  <img src="https://streak-stats.demolab.com/?user=vinislvleite&theme=dracula&background=0d1117&border=30363d&stroke=a78bfa&ring=7c3aed&fire=7c3aed&currStreakLabel=c9d1d9" width="100%" />
+</div>
