@@ -10,51 +10,51 @@
       <rect x="10" y="10" width="800" height="860" rx="24" />
     </clipPath>
 
-    <!-- Window Background Gradient (Clean Apple Dark Glass) -->
+    <!-- Window Background Gradient: Simple elegant gradient from black to dark purple -->
     <linearGradient id="windowGlass" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#121622" stop-opacity="0.98" />
-      <stop offset="50%" stop-color="#0d1019" stop-opacity="0.99" />
-      <stop offset="100%" stop-color="#080a10" stop-opacity="1.0" />
+      <stop offset="0%" stop-color="#08030d" />
+      <stop offset="45%" stop-color="#130722" />
+      <stop offset="100%" stop-color="#230a3d" />
     </linearGradient>
 
-    <!-- Window Border Refraction (Apple Specular Bevel - Clean, Crisp) -->
+    <!-- Window Border Refraction (Apple Specular Bevel with subtle purple tint) -->
     <linearGradient id="liquidGlassBorder" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45" />
-      <stop offset="10%" stop-color="#ffffff" stop-opacity="0.20" />
-      <stop offset="60%" stop-color="#30363d" stop-opacity="0.60" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.15" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.40" />
+      <stop offset="20%" stop-color="#c4b5fd" stop-opacity="0.22" />
+      <stop offset="65%" stop-color="#7c3aed" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.25" />
     </linearGradient>
 
     <!-- macOS Header Bar Glass -->
     <linearGradient id="headerGlass" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.25" />
     </linearGradient>
 
-    <!-- Card Frosted Glass Fill -->
+    <!-- Card Frosted Glass Fill with slight dark purple tint -->
     <linearGradient id="cardGlass" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.04" />
     </linearGradient>
 
     <!-- Card Specular Border -->
     <linearGradient id="cardBorder" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22" />
-      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04" />
+      <stop offset="30%" stop-color="#c4b5fd" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.15" />
     </linearGradient>
 
     <!-- Pill Glass Fill -->
     <linearGradient id="pillGlass" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.05" />
     </linearGradient>
 
     <!-- Pill Specular Border -->
     <linearGradient id="pillBorder" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.28" />
-      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.10" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="40%" stop-color="#c4b5fd" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.18" />
     </linearGradient>
 
     <!-- Vertical Divider Glass Fade -->
@@ -145,6 +145,7 @@
     <line x1="44" y1="147" x2="776" y2="147" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
     <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif">
       <text x="48" y="168" font-size="13.5" fill="#e6edf3">
+        <tspan fill="#c4b5fd" font-weight="700">&gt; </tspan>
         <tspan fill="#7ee787" font-weight="700">ABOUT: </tspan>
         <tspan fill="#ffffff" font-weight="600">Software Engineering student</tspan>
         <tspan fill="#c9d1d9"> at </tspan>
@@ -152,7 +153,7 @@
         <tspan fill="#c9d1d9">, building production-ready architectures and enterprise web systems.</tspan>
       </text>
       <text x="48" y="188" font-size="12.5" fill="#8b949e">
-        Delivering high-impact corporate solutions for real clients: <tspan fill="#58a6ff" font-weight="600">GSW Solucoes Integradas</tspan> and <tspan fill="#58a6ff" font-weight="600">Newe Log</tspan>.
+        <tspan fill="#c4b5fd" font-weight="700">&gt; </tspan>Delivering high-impact corporate solutions for real clients: <tspan fill="#58a6ff" font-weight="600">GSW Solucoes Integradas</tspan> and <tspan fill="#58a6ff" font-weight="600">Newe Log</tspan>.
       </text>
     </g>
 
@@ -160,11 +161,11 @@
     <rect x="34" y="210" width="752" height="268" rx="12" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
     <line x1="44" y1="211" x2="776" y2="211" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
     <text x="48" y="234" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="13.5" font-weight="700" letter-spacing="0.6" fill="#c4b5fd">
-      [ 01. COMPLETE TECH STACK ]
+      &gt; [ 01. COMPLETE TECH STACK ]
     </text>
 
     <!-- FRONT-END: Row 1 -->
-    <text x="48" y="258" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">FRONT-END:</text>
+    <text x="48" y="258" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">&gt; FRONT-END:</text>
     <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="500">
       <!-- React -->
       <g transform="translate(142, 245)">
@@ -255,7 +256,7 @@
     </g>
 
     <!-- BACK-END: Row 1 -->
-    <text x="48" y="308" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">BACK-END:</text>
+    <text x="48" y="308" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">&gt; BACK-END:</text>
     <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="500">
       <!-- Node.js -->
       <g transform="translate(142, 295)">
@@ -328,7 +329,7 @@
     </g>
 
     <!-- DATA & AI: Row -->
-    <text x="48" y="358" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">DATA &amp; AI:</text>
+    <text x="48" y="358" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">&gt; DATA &amp; AI:</text>
     <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="500">
       <!-- Pandas -->
       <g transform="translate(142, 345)">
@@ -362,7 +363,7 @@
     </g>
 
     <!-- DATABASES: Row -->
-    <text x="48" y="400" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">DATABASES:</text>
+    <text x="48" y="400" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">&gt; DATABASES:</text>
     <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="500">
       <!-- PostgreSQL -->
       <g transform="translate(142, 387)">
@@ -413,7 +414,7 @@
     </g>
 
     <!-- DEVOPS: Row -->
-    <text x="48" y="442" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">DEVOPS:</text>
+    <text x="48" y="442" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">&gt; DEVOPS:</text>
     <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="500">
       <!-- Docker -->
       <g transform="translate(142, 429)">
@@ -465,7 +466,7 @@
     <rect x="34" y="486" width="752" height="156" rx="12" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
     <line x1="44" y1="487" x2="776" y2="487" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
     <text x="48" y="508" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="13.5" font-weight="700" letter-spacing="0.6" fill="#c4b5fd">
-      [ 02. ENTERPRISE PROJECTS FOR REAL CLIENTS ]
+      &gt; [ 02. ENTERPRISE PROJECTS FOR REAL CLIENTS ]
     </text>
 
     <!-- Project 1: GSW -->
@@ -474,11 +475,11 @@
         &gt; GSW Solucoes Integradas
         <tspan fill="#8b949e" font-weight="400" font-size="12.5"> | Enterprise Time-Tracking &amp; Financial Governance System</tspan>
       </text>
-      <text x="64" y="550" font-size="12" fill="#c9d1d9">
-        Squad resource allocation, real-time time tracking, and financial audit pipelines for distributed squads.
+      <text x="48" y="550" font-size="12" fill="#c9d1d9">
+        <tspan fill="#c4b5fd" font-weight="700">&gt; </tspan>Squad resource allocation, real-time time tracking, and financial audit pipelines for distributed squads.
       </text>
-      <text x="64" y="568" font-size="11.5">
-        <tspan fill="#7ee787" font-weight="600">Stack:</tspan>
+      <text x="48" y="568" font-size="11.5">
+        <tspan fill="#c4b5fd" font-weight="700">&gt; </tspan><tspan fill="#7ee787" font-weight="600">Stack:</tspan>
         <tspan fill="#e6edf3"> Next.js &#8226; TypeScript &#8226; Spring Boot &#8226; Spring Cloud &#8226; MySQL &#8226; Docker</tspan>
       </text>
 
@@ -487,11 +488,11 @@
         &gt; Newe Log
         <tspan fill="#8b949e" font-weight="400" font-size="12.5"> | Transportation Logistics &amp; Commercial CRM Platform</tspan>
       </text>
-      <text x="64" y="612" font-size="12" fill="#c9d1d9">
-        Sales pipeline centralization, automated operational checklist verification, and real-time KPI dashboards.
+      <text x="48" y="612" font-size="12" fill="#c9d1d9">
+        <tspan fill="#c4b5fd" font-weight="700">&gt; </tspan>Sales pipeline centralization, automated operational checklist verification, and real-time KPI dashboards.
       </text>
-      <text x="64" y="630" font-size="11.5">
-        <tspan fill="#7ee787" font-weight="600">Stack:</tspan>
+      <text x="48" y="630" font-size="11.5">
+        <tspan fill="#c4b5fd" font-weight="700">&gt; </tspan><tspan fill="#7ee787" font-weight="600">Stack:</tspan>
         <tspan fill="#e6edf3"> React &#8226; Node.js &#8226; TypeScript &#8226; MySQL &#8226; Express</tspan>
       </text>
     </g>
@@ -500,7 +501,7 @@
     <rect x="34" y="650" width="752" height="138" rx="12" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
     <line x1="44" y1="651" x2="776" y2="651" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
     <text x="48" y="670" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="13.5" font-weight="700" letter-spacing="0.6" fill="#c4b5fd">
-      [ 03. CONTRIBUTION STATISTICS ]
+      &gt; [ 03. CONTRIBUTION STATISTICS ]
     </text>
 
     <!-- Vertical Dividers with Liquid Glass Fade -->
@@ -536,15 +537,18 @@
     <line x1="44" y1="797" x2="776" y2="797" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
     <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="12.5">
       <text x="48" y="820">
+        <tspan fill="#c4b5fd" font-weight="bold">&gt; </tspan>
         <tspan fill="#a78bfa" font-weight="bold">DEGREE:</tspan>
         <tspan fill="#7ee787" font-weight="bold"> B.S. in Multiplatform Software Development</tspan>
         <tspan fill="#8b949e"> at </tspan>
         <tspan fill="#ffffff" font-weight="bold">FATEC SJC</tspan>
       </text>
       <text x="48" y="842">
+        <tspan fill="#c4b5fd" font-weight="bold">&gt; </tspan>
         <tspan fill="#a78bfa" font-weight="bold">LOCATION:</tspan>
         <tspan fill="#e6edf3"> Sao Jose dos Campos, SP, Brazil</tspan>
         <tspan fill="#8b949e">   |   </tspan>
+        <tspan fill="#c4b5fd" font-weight="bold">&gt; </tspan>
         <tspan fill="#a78bfa" font-weight="bold">LINKEDIN:</tspan>
         <tspan fill="#58a6ff"> /in/vinicius-leite-4792b02ba</tspan>
       </text>
