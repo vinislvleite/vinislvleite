@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 530" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
       <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7c3aed" flood-opacity="0.22" />
@@ -20,7 +20,7 @@
   </defs>
 
   <!-- Janela Principal -->
-  <rect x="2" y="2" width="796" height="526" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
+  <rect x="2" y="2" width="796" height="516" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
 
   <!-- Barra macOS -->
   <path d="M 2 12 Q 2 2 12 2 L 788 2 Q 798 2 798 12 L 798 36 L 2 36 Z" fill="#161b22" />
@@ -67,78 +67,83 @@
     <animate attributeName="x" values="28; 390; 390; 28; 430; 430; 28" keyTimes="0; 0.32; 0.46; 0.50; 0.82; 0.96; 1" dur="8s" repeatCount="indefinite" />
   </rect>
 
+  <!-- APRESENTAÇÃO INTEGRADA DENTRO DO TERMINAL -->
+  <rect x="28" y="130" width="744" height="42" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="156" font-family="'Fira Code', Consolas, monospace" font-size="11.5" fill="#c9d1d9">
+    <tspan fill="#7ee787" font-weight="600">ABOUT:</tspan> Cursando Desenvolvimento de Software e atuando com clientes reais (GSW e Newe Log).
+  </text>
+
   <!-- SEÇÃO 1: STACK & TECNOLOGIAS -->
-  <rect x="28" y="130" width="744" height="126" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  <text x="44" y="152" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#7c3aed">
+  <rect x="28" y="182" width="744" height="120" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="204" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#7c3aed">
     [ 01. STACK TECNOLOGICA ]
   </text>
 
   <g font-family="'Fira Code', Consolas, monospace" font-size="12">
-    <text x="44" y="176">
+    <text x="44" y="226">
       <tspan fill="#a78bfa" font-weight="600">FRONT-END:</tspan>
       <tspan fill="#e6edf3"> React • Next.js • Vite • TypeScript • Tailwind CSS • Figma</tspan>
     </text>
-    <text x="44" y="198">
+    <text x="44" y="248">
       <tspan fill="#a78bfa" font-weight="600">BACK-END:</tspan>
       <tspan fill="#e6edf3">  Node.js • Java (Spring Boot &amp; Spring Cloud) • Python</tspan>
     </text>
-    <text x="44" y="220">
+    <text x="44" y="270">
       <tspan fill="#a78bfa" font-weight="600">DATABASES:</tspan>
       <tspan fill="#e6edf3"> MySQL • MongoDB • Redis • Apache Cassandra • Neo4j</tspan>
     </text>
-    <text x="44" y="242">
+    <text x="44" y="292">
       <tspan fill="#a78bfa" font-weight="600">DEVOPS:</tspan>
       <tspan fill="#e6edf3">    Docker • Git • GitHub Actions • Postman • Linux</tspan>
     </text>
   </g>
 
   <!-- SEÇÃO 2: PROJETOS COM CLIENTES REAIS -->
-  <rect x="28" y="268" width="744" height="152" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  <text x="44" y="290" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#7c3aed">
+  <rect x="28" y="312" width="744" height="142" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="334" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#7c3aed">
     [ 02. PROJETOS CORPORATIVOS COM CLIENTES REAIS ]
   </text>
 
   <!-- Projeto 1: GSW -->
   <g font-family="'Fira Code', Consolas, monospace">
-    <text x="44" y="316" font-size="12.5" font-weight="bold" fill="#58a6ff">
+    <text x="44" y="358" font-size="12.5" font-weight="bold" fill="#58a6ff">
       &gt; GSW Solucoes Integradas
       <tspan fill="#8b949e" font-weight="normal" font-size="11.5"> | Sistema de Apontamento de Horas &amp; Financeiro</tspan>
     </text>
-    <text x="58" y="334" font-size="11" fill="#8b949e">
+    <text x="58" y="376" font-size="11" fill="#8b949e">
       Gestao de horas, alocacao de squads e auditoria financeira de equipes distribuidas.
     </text>
-    <text x="58" y="352" font-size="11">
+    <text x="58" y="394" font-size="11">
       <tspan fill="#7ee787">Stack:</tspan>
       <tspan fill="#e6edf3"> Next.js • TypeScript • Spring Boot • Spring Cloud • MySQL • Docker</tspan>
     </text>
 
     <!-- Projeto 2: Newe Log -->
-    <text x="44" y="380" font-size="12.5" font-weight="bold" fill="#58a6ff">
+    <text x="44" y="420" font-size="12.5" font-weight="bold" fill="#58a6ff">
       &gt; Newe Log
       <tspan fill="#8b949e" font-weight="normal" font-size="11.5"> | Sistema CRM &amp; Gestao Comercial de Transportes</tspan>
     </text>
-    <text x="58" y="398" font-size="11" fill="#8b949e">
+    <text x="58" y="438" font-size="11" fill="#8b949e">
       Centralizacao de funil de vendas, automacao de checklists e dashboards operacionais.
     </text>
-    <text x="58" y="416" font-size="11">
+    <text x="58" y="456" font-size="11">
       <tspan fill="#7ee787">Stack:</tspan>
       <tspan fill="#e6edf3"> React • Node.js • TypeScript • MySQL • Express</tspan>
     </text>
   </g>
 
-  <!-- SEÇÃO 3: STATUS DO SISTEMA -->
-  <rect x="28" y="432" width="744" height="74" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <!-- SEÇÃO 3: CONTATOS & INFO (SEM STATUS) -->
+  <rect x="28" y="464" width="744" height="42" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
   <g font-family="'Fira Code', Consolas, monospace" font-size="11.5">
-    <text x="44" y="456">
+    <text x="44" y="490">
       <tspan fill="#a78bfa" font-weight="600">LOCAL:</tspan>
       <tspan fill="#e6edf3"> Sao Jose dos Campos, SP</tspan>
       <tspan fill="#8b949e">  |  </tspan>
-      <tspan fill="#a78bfa" font-weight="600">FORMACAO:</tspan>
-      <tspan fill="#e6edf3"> Graduacao em Software (em andamento)</tspan>
-    </text>
-    <text x="44" y="482">
-      <tspan fill="#a78bfa" font-weight="600">STATUS:</tspan>
-      <tspan fill="#2ea043" font-weight="bold">● Disponivel para contratacao e novos projetos</tspan>
+      <tspan fill="#a78bfa" font-weight="600">LINKEDIN:</tspan>
+      <tspan fill="#58a6ff"> in/vinicius-leite-4792b02ba</tspan>
+      <tspan fill="#8b949e">  |  </tspan>
+      <tspan fill="#a78bfa" font-weight="600">GRADUACAO:</tspan>
+      <tspan fill="#e6edf3"> Em andamento</tspan>
     </text>
   </g>
 </svg>
