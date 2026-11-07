@@ -80,14 +80,14 @@
     <!-- Animated Mask Phrase 1 (in sync with cursor) -->
     <clipPath id="clipPhrase1">
       <rect x="70" y="122" width="0" height="35">
-        <animate attributeName="width" values="0; 390; 390; 0; 0; 0; 0" keyTimes="0; 0.30; 0.475; 0.50; 0.50; 0.975; 1" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 370; 370; 0; 0; 0; 0" keyTimes="0; 0.30; 0.475; 0.50; 0.50; 0.975; 1" dur="8s" repeatCount="indefinite" />
       </rect>
     </clipPath>
 
     <!-- Animated Mask Phrase 2 (in sync with cursor) -->
     <clipPath id="clipPhrase2">
       <rect x="70" y="122" width="0" height="35">
-        <animate attributeName="width" values="0; 0; 0; 0; 490; 490; 0" keyTimes="0; 0.475; 0.50; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 0; 0; 0; 460; 460; 0" keyTimes="0; 0.475; 0.50; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
       </rect>
     </clipPath>
   </defs>
@@ -125,12 +125,12 @@
 
     <!-- Title Capsule Pill (Frosted Glass) -->
     <rect x="365" y="41" width="210" height="24" rx="12" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.18" stroke-width="0.8" />
-    <text x="470" y="57" text-anchor="middle" fill="#c9d1d9" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif">
+    <text x="470" y="57" text-anchor="middle" fill="#c9d1d9" font-size="11.5" font-weight="600" letter-spacing="0.2" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif">
       vinicius@workstation: ~ (zsh)
     </text>
 
     <!-- Shell Prompt Line -->
-    <g font-family="'Fira Code', Consolas, monospace" font-size="14">
+    <g font-family="'SF Mono', Menlo, Monaco, 'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="13.5" letter-spacing="0.2">
       <text x="70" y="102">
         <tspan fill="#3fb950" font-weight="600">vinicius@developer</tspan>
         <tspan fill="#8b949e">:</tspan>
@@ -143,14 +143,14 @@
 
     <!-- Typewriter Phrase 1 -->
     <g clip-path="url(#clipPhrase1)">
-      <text x="70" y="144" font-family="'Fira Code', Consolas, monospace" font-size="15" font-weight="600" fill="#c4b5fd">
+      <text x="70" y="144" font-family="'SF Mono', Menlo, Monaco, 'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="14.5" font-weight="600" fill="#c4b5fd" letter-spacing="0.2">
         &gt; Mastering React, Next.js and TypeScript
       </text>
     </g>
 
     <!-- Typewriter Phrase 2 -->
     <g clip-path="url(#clipPhrase2)">
-      <text x="70" y="144" font-family="'Fira Code', Consolas, monospace" font-size="15" font-weight="600" fill="#c4b5fd">
+      <text x="70" y="144" font-family="'SF Mono', Menlo, Monaco, 'Cascadia Code', 'JetBrains Mono', Consolas, monospace" font-size="14.5" font-weight="600" fill="#c4b5fd" letter-spacing="0.2">
         &gt; Full-Stack Developer | Modern Front-End Specialist
       </text>
     </g>
@@ -158,33 +158,35 @@
     <!-- Dynamic Typing Cursor in exact synchrony -->
     <rect x="70" y="128" width="8" height="18" fill="#ffffff">
       <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
-      <animate attributeName="x" values="70; 460; 460; 70; 560; 560; 70" keyTimes="0; 0.30; 0.475; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="x" values="70; 440; 440; 70; 530; 530; 70" keyTimes="0; 0.30; 0.475; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
     </rect>
 
     <!-- ABOUT CARD (Frosted Glass Panel) -->
     <rect x="70" y="164" width="800" height="58" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
     <line x1="82" y1="165" x2="858" y2="165" stroke="#ffffff" stroke-opacity="0.30" stroke-width="0.8" />
-    <text x="86" y="186" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="12.5" fill="#e6edf3">
-      <tspan fill="#7ee787" font-weight="700">ABOUT: </tspan>
-      <tspan fill="#ffffff" font-weight="600">Software Engineering student</tspan>
-      <tspan fill="#c9d1d9"> at </tspan>
-      <tspan fill="#79c0ff" font-weight="600">FATEC SJC</tspan>
-      <tspan fill="#c9d1d9">, building production-ready architectures and enterprise web systems.</tspan>
-    </text>
-    <text x="86" y="206" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="12" fill="#8b949e">
-      Delivering high-impact corporate solutions for real clients: <tspan fill="#58a6ff" font-weight="600">GSW Solucoes Integradas</tspan> and <tspan fill="#58a6ff" font-weight="600">Newe Log</tspan>.
-    </text>
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif">
+      <text x="86" y="186" font-size="12.5" fill="#e6edf3">
+        <tspan fill="#7ee787" font-weight="700">ABOUT: </tspan>
+        <tspan fill="#ffffff" font-weight="600">Software Engineering student</tspan>
+        <tspan fill="#c9d1d9"> at </tspan>
+        <tspan fill="#79c0ff" font-weight="600">FATEC SJC</tspan>
+        <tspan fill="#c9d1d9">, building production-ready architectures and enterprise web systems.</tspan>
+      </text>
+      <text x="86" y="206" font-size="12" fill="#8b949e">
+        Delivering high-impact corporate solutions for real clients: <tspan fill="#58a6ff" font-weight="600">GSW Solucoes Integradas</tspan> and <tspan fill="#58a6ff" font-weight="600">Newe Log</tspan>.
+      </text>
+    </g>
 
     <!-- SECTION 1: COMPLETE TECH STACK (Frosted Glass Panel) -->
     <rect x="70" y="234" width="800" height="286" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
     <line x1="82" y1="235" x2="858" y2="235" stroke="#ffffff" stroke-opacity="0.30" stroke-width="0.8" />
-    <text x="86" y="258" font-family="'Fira Code', monospace" font-size="13" font-weight="bold" fill="#a78bfa">
+    <text x="86" y="258" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="0.6" fill="#c4b5fd">
       [ 01. COMPLETE TECH STACK ]
     </text>
 
     <!-- FRONT-END: Row 1 -->
-    <text x="86" y="283" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#c4b5fd">FRONT-END:</text>
-    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
+    <text x="86" y="283" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">FRONT-END:</text>
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="500">
       <!-- React -->
       <g transform="translate(182, 270)">
         <rect width="68" height="20" rx="10" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
@@ -238,7 +240,7 @@
     </g>
 
     <!-- FRONT-END: Row 2 -->
-    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="500">
       <!-- CSS Modules -->
       <g transform="translate(182, 296)">
         <rect width="104" height="20" rx="10" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
@@ -274,8 +276,8 @@
     </g>
 
     <!-- BACK-END: Row 1 -->
-    <text x="86" y="337" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#c4b5fd">BACK-END:</text>
-    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
+    <text x="86" y="337" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">BACK-END:</text>
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="500">
       <!-- Node.js -->
       <g transform="translate(182, 324)">
         <rect width="80" height="20" rx="10" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
@@ -330,7 +332,7 @@
     </g>
 
     <!-- BACK-END: Row 2 -->
-    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="500">
       <!-- Prisma ORM -->
       <g transform="translate(182, 350)">
         <rect width="98" height="20" rx="10" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
@@ -347,8 +349,8 @@
     </g>
 
     <!-- DATA & AI: Row -->
-    <text x="86" y="391" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#c4b5fd">DATA &amp; AI:</text>
-    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
+    <text x="86" y="391" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">DATA &amp; AI:</text>
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="500">
       <!-- Pandas -->
       <g transform="translate(182, 378)">
         <rect width="80" height="20" rx="10" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
@@ -381,8 +383,8 @@
     </g>
 
     <!-- DATABASES: Row -->
-    <text x="86" y="433" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#c4b5fd">DATABASES:</text>
-    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
+    <text x="86" y="433" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">DATABASES:</text>
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="500">
       <!-- PostgreSQL -->
       <g transform="translate(182, 420)">
         <rect width="96" height="20" rx="10" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
@@ -432,8 +434,8 @@
     </g>
 
     <!-- DEVOPS: Row -->
-    <text x="86" y="475" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#c4b5fd">DEVOPS:</text>
-    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
+    <text x="86" y="475" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5" fill="#c4b5fd">DEVOPS:</text>
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="500">
       <!-- Docker -->
       <g transform="translate(182, 462)">
         <rect width="76" height="20" rx="10" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
@@ -483,33 +485,33 @@
     <!-- SECTION 2: ENTERPRISE PROJECTS FOR REAL CLIENTS (Frosted Glass Panel) -->
     <rect x="70" y="536" width="800" height="172" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
     <line x1="82" y1="537" x2="858" y2="537" stroke="#ffffff" stroke-opacity="0.30" stroke-width="0.8" />
-    <text x="86" y="560" font-family="'Fira Code', monospace" font-size="13" font-weight="bold" fill="#a78bfa">
+    <text x="86" y="560" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="0.6" fill="#c4b5fd">
       [ 02. ENTERPRISE PROJECTS FOR REAL CLIENTS ]
     </text>
 
     <!-- Project 1: GSW -->
-    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
-      <text x="86" y="586" font-size="13.5" font-weight="bold" fill="#58a6ff">
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif">
+      <text x="86" y="586" font-size="13.5" font-weight="700" fill="#79c0ff">
         &gt; GSW Solucoes Integradas
-        <tspan fill="#8b949e" font-weight="normal" font-size="12.5"> | Enterprise Time-Tracking &amp; Financial Governance System</tspan>
+        <tspan fill="#8b949e" font-weight="400" font-size="12.5"> | Enterprise Time-Tracking &amp; Financial Governance System</tspan>
       </text>
-      <text x="102" y="606" font-size="12.5" fill="#c9d1d9">
+      <text x="102" y="606" font-size="12" fill="#c9d1d9">
         Squad resource allocation, real-time time tracking, and financial audit pipelines for distributed squads.
       </text>
-      <text x="102" y="626" font-size="12">
+      <text x="102" y="626" font-size="11.5">
         <tspan fill="#7ee787" font-weight="600">Stack:</tspan>
         <tspan fill="#e6edf3"> Next.js &#8226; TypeScript &#8226; Spring Boot &#8226; Spring Cloud &#8226; MySQL &#8226; Docker</tspan>
       </text>
 
       <!-- Project 2: Newe Log -->
-      <text x="86" y="654" font-size="13.5" font-weight="bold" fill="#58a6ff">
+      <text x="86" y="654" font-size="13.5" font-weight="700" fill="#79c0ff">
         &gt; Newe Log
-        <tspan fill="#8b949e" font-weight="normal" font-size="12.5"> | Transportation Logistics &amp; Commercial CRM Platform</tspan>
+        <tspan fill="#8b949e" font-weight="400" font-size="12.5"> | Transportation Logistics &amp; Commercial CRM Platform</tspan>
       </text>
-      <text x="102" y="674" font-size="12.5" fill="#c9d1d9">
+      <text x="102" y="674" font-size="12" fill="#c9d1d9">
         Sales pipeline centralization, automated operational checklist verification, and real-time KPI dashboards.
       </text>
-      <text x="102" y="694" font-size="12">
+      <text x="102" y="694" font-size="11.5">
         <tspan fill="#7ee787" font-weight="600">Stack:</tspan>
         <tspan fill="#e6edf3"> React &#8226; Node.js &#8226; TypeScript &#8226; MySQL &#8226; Express</tspan>
       </text>
@@ -518,7 +520,7 @@
     <!-- SECTION 3: CONTRIBUTION STATISTICS (Crisp Floating Glass Pod) -->
     <rect x="70" y="724" width="800" height="152" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
     <line x1="82" y1="725" x2="858" y2="725" stroke="#ffffff" stroke-opacity="0.30" stroke-width="0.8" />
-    <text x="86" y="748" font-family="'Fira Code', monospace" font-size="13" font-weight="bold" fill="#a78bfa">
+    <text x="86" y="748" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="0.6" fill="#c4b5fd">
       [ 03. CONTRIBUTION STATISTICS ]
     </text>
 
@@ -527,10 +529,10 @@
     <line x1="613" y1="756" x2="613" y2="864" stroke="url(#dividerFade)" stroke-width="1.2" />
 
     <!-- Total Contributions -->
-    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
-      <text x="196" y="792" font-size="34" font-weight="800" fill="#ff7b72">466</text>
-      <text x="196" y="820" font-size="13.5" font-weight="600" fill="#f472b6">Total Contributions</text>
-      <text x="196" y="844" font-size="12" fill="#8b949e">Mar 13, 2024 - Present</text>
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" text-anchor="middle">
+      <text x="196" y="792" font-size="34" font-weight="800" fill="#ff7b72" letter-spacing="-0.5">466</text>
+      <text x="196" y="820" font-size="13" font-weight="600" fill="#f472b6">Total Contributions</text>
+      <text x="196" y="844" font-size="11.5" fill="#8b949e">Mar 13, 2024 - Present</text>
     </g>
 
     <!-- Current Streak (Clean Purple Ring and Flame without blurry glow) -->
@@ -538,22 +540,22 @@
       <circle cx="470" cy="786" r="28" fill="none" stroke="#7c3aed" stroke-width="3.5" />
       <path d="M 470 750 C 465 757 462 761 462 766 C 462 771 465 774 470 774 C 475 774 478 771 478 766 C 478 761 475 757 470 750 Z" fill="#c4b5fd" />
       <path d="M 470 758 C 467 762 466 764 466 767 C 466 769 467 771 470 771 C 473 771 474 769 474 767 C 474 764 473 762 470 758 Z" fill="#79c0ff" />
-      <text x="470" y="795" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="26" font-weight="800" fill="#79c0ff">0</text>
-      <text x="470" y="830" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Current Streak</text>
-      <text x="470" y="850" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#8b949e">Nov 7</text>
+      <text x="470" y="795" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="26" font-weight="800" fill="#79c0ff">0</text>
+      <text x="470" y="830" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="13.5" font-weight="700" fill="#ffffff">Current Streak</text>
+      <text x="470" y="850" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#8b949e">Nov 7</text>
     </g>
 
     <!-- Longest Streak -->
-    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
-      <text x="740" y="792" font-size="34" font-weight="800" fill="#ff7b72">8</text>
-      <text x="740" y="820" font-size="13.5" font-weight="600" fill="#f472b6">Longest Streak</text>
-      <text x="740" y="844" font-size="12" fill="#8b949e">Oct 19 - Oct 26</text>
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" text-anchor="middle">
+      <text x="740" y="792" font-size="34" font-weight="800" fill="#ff7b72" letter-spacing="-0.5">8</text>
+      <text x="740" y="820" font-size="13" font-weight="600" fill="#f472b6">Longest Streak</text>
+      <text x="740" y="844" font-size="11.5" fill="#8b949e">Oct 19 - Oct 26</text>
     </g>
 
     <!-- SECTION 4: DEGREE & CONTACTS (Frosted Glass Panel) -->
     <rect x="70" y="892" width="800" height="70" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
     <line x1="82" y1="893" x2="858" y2="893" stroke="#ffffff" stroke-opacity="0.30" stroke-width="0.8" />
-    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="12.5">
+    <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', 'Segoe UI', system-ui, sans-serif" font-size="12.5">
       <text x="86" y="918">
         <tspan fill="#a78bfa" font-weight="bold">DEGREE:</tspan>
         <tspan fill="#7ee787" font-weight="bold"> B.S. in Multiplatform Software Development</tspan>
