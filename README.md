@@ -1,24 +1,27 @@
+```bash
+vinicius@developer : ~ $ neofetch --full-profile
+```
+
 <div align="center">
 
-  <!-- macOS Terminal Header: Window controls, prompt, typewriter, About, Tech Stack -->
-  <img src="./terminal-header.svg?v=1" width="100%" alt="Vinicius Leite Terminal Header" />
+  <!-- Apple macOS Terminal Liquid Glass Window -->
+  <picture>
+    <img src="./terminal.svg?v=26" width="100%" alt="Vinicius Leite - Full-Stack Developer Terminal" />
+  </picture>
 
-  <!-- ENTERPRISE PROJECT 1: GSW Solucoes Integradas (CLICKABLE) -->
-  <a href="https://github.com/Kernel-Panic-FatecSjc/KernelPanic-3DSM-API" target="_blank">
-    <img src="./terminal-gsw.svg?v=1" width="100%" alt="GSW Solucoes Integradas - View Repository" />
+  <br/><br/>
+
+  <!-- 100% WORKING ACTION BUTTONS -->
+  <a href="https://github.com/Kernel-Panic-FatecSjc/KernelPanic-3DSM-API" target="_blank" rel="noopener noreferrer">
+    <img src="./button-gsw.svg" height="42" alt="GSW Enterprise Repository" />
   </a>
-
-  <!-- ENTERPRISE PROJECT 2: Newe Log (CLICKABLE) -->
-  <a href="https://github.com/Kernel-Panic-FatecSjc/KernelPanic-2DSM-API" target="_blank">
-    <img src="./terminal-newelog.svg?v=1" width="100%" alt="Newe Log - View Repository" />
+  &nbsp;&nbsp;
+  <a href="https://github.com/Kernel-Panic-FatecSjc/KernelPanic-2DSM-API" target="_blank" rel="noopener noreferrer">
+    <img src="./button-newelog.svg" height="42" alt="Newe Log CRM Repository" />
   </a>
-
-  <!-- SECTION 3: Contribution Statistics -->
-  <img src="./terminal-stats.svg?v=1" width="100%" alt="Contribution Statistics" />
-
-  <!-- SECTION 4: Degree & Contacts (CLICKABLE LINKEDIN) -->
-  <a href="https://www.linkedin.com/in/vinicius-leite-4792b02ba/" target="_blank">
-    <img src="./terminal-contact.svg?v=1" width="100%" alt="LinkedIn Profile" />
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/vinicius-leite-4792b02ba/" target="_blank" rel="noopener noreferrer">
+    <img src="./button-linkedin.svg" height="42" alt="LinkedIn Profile" />
   </a>
 
 </div>
@@ -26,7 +29,7 @@
 <br/>
 
 <details>
-  <summary>📋 <b>Click to expand and copy terminal profile text (Raw CLI output)</b></summary>
+  <summary>📋 <b>Click to view plain-text terminal output</b></summary>
 
 ```zsh
 > vinicius@developer : ~ $ neofetch --full-profile

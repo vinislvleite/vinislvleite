@@ -1,10 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 820 1010" width="100%" height="100%" style="cursor: default; user-select: none;">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 1010" width="100%" height="100%" style="cursor: default; pointer-events: none; user-select: none;">
   <style>
     text, tspan {
       font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
-    }
-    a {
-      cursor: pointer;
     }
   </style>
 
@@ -480,17 +477,8 @@
     <g font-family="'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace">
       <text x="48" y="610" font-size="12.5" font-weight="600" fill="#93c5fd" letter-spacing="0.2">
         &gt; GSW Solucoes Integradas
-        <tspan fill="#94a3b8" font-weight="400" font-size="11.5"> | Time-Tracking System</tspan>
+        <tspan fill="#94a3b8" font-weight="400" font-size="11.5"> | Enterprise Time-Tracking System</tspan>
       </text>
-
-      <!-- GSW Repo Button inside SVG -->
-      <a xlink:href="https://github.com/Kernel-Panic-FatecSjc/KernelPanic-3DSM-API" target="_blank">
-        <g transform="translate(615, 595)">
-          <rect width="155" height="22" rx="11" fill="url(#pillGlass)" stroke="#7c3aed" stroke-width="0.9" />
-          <text x="77" y="15" text-anchor="middle" fill="#c4b5fd" font-size="10.5" font-weight="600">[ â†— View Repo ]</text>
-        </g>
-      </a>
-
       <text x="48" y="632" font-size="11.5" fill="#cbd5e1" font-weight="400" letter-spacing="0.1">
         <tspan fill="#a855f7" font-weight="600">&gt; </tspan>Squad resource allocation, real-time tracking &amp; financial audit pipelines.
       </text>
@@ -502,17 +490,8 @@
       <!-- Project 2: Newe Log -->
       <text x="48" y="682" font-size="12.5" font-weight="600" fill="#93c5fd" letter-spacing="0.2">
         &gt; Newe Log
-        <tspan fill="#94a3b8" font-weight="400" font-size="11.5"> | Logistics &amp; Commercial CRM</tspan>
+        <tspan fill="#94a3b8" font-weight="400" font-size="11.5"> | Transportation Logistics &amp; Commercial CRM Platform</tspan>
       </text>
-
-      <!-- Newe Log Repo Button inside SVG -->
-      <a xlink:href="https://github.com/Kernel-Panic-FatecSjc/KernelPanic-2DSM-API" target="_blank">
-        <g transform="translate(615, 667)">
-          <rect width="155" height="22" rx="11" fill="url(#pillGlass)" stroke="#7c3aed" stroke-width="0.9" />
-          <text x="77" y="15" text-anchor="middle" fill="#c4b5fd" font-size="10.5" font-weight="600">[ â†— View Repo ]</text>
-        </g>
-      </a>
-
       <text x="48" y="704" font-size="11.5" fill="#cbd5e1" font-weight="400" letter-spacing="0.1">
         <tspan fill="#a855f7" font-weight="600">&gt; </tspan>Sales pipeline centralization &amp; real-time operational KPI dashboards.
       </text>
@@ -568,7 +547,6 @@
         <tspan fill="#94a3b8"> at </tspan>
         <tspan fill="#ffffff" font-weight="600">FATEC SJC</tspan>
       </text>
-
       <text x="48" y="968" letter-spacing="0.2">
         <tspan fill="#a855f7" font-weight="600">&gt; </tspan>
         <tspan fill="#c4b5fd" font-weight="600">LOCATION:</tspan>
@@ -578,16 +556,6 @@
         <tspan fill="#c4b5fd" font-weight="600">LINKEDIN:</tspan>
         <tspan fill="#60a5fa"> /in/vinicius-leite-4792b02ba</tspan>
       </text>
-
-      <!-- LinkedIn Button inside SVG -->
-      <a xlink:href="https://www.linkedin.com/in/vinicius-leite-4792b02ba/" target="_blank">
-        <g transform="translate(615, 952)">
-          <rect width="155" height="22" rx="11" fill="url(#pillGlass)" stroke="#60a5fa" stroke-width="0.9" />
-          <circle cx="12" cy="11" r="5" fill="#0077b5" />
-          <text x="12" y="14" font-size="6" font-weight="bold" fill="#fff" text-anchor="middle">in</text>
-          <text x="85" y="15" text-anchor="middle" fill="#93c5fd" font-size="10.5" font-weight="600">[ â†— LinkedIn ]</text>
-        </g>
-      </a>
     </g>
   </g>
 </svg>
