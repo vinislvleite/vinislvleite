@@ -156,8 +156,10 @@
     <!-- HTML5 / CSS3 -->
     <g transform="translate(310, 245)">
       <rect width="104" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
-      <text x="8" y="14" font-size="10" fill="#e34f26">●</text>
-      <text x="18" y="14" fill="#e6edf3">HTML5 / CSS3</text>
+      <polygon points="5,4 15,4 14.2,13.5 10,15.5 5.8,13.5" fill="#e34f26" />
+      <polygon points="10,5 13.5,5 13,12.8 10,14.5" fill="#f06529" />
+      <text x="10" y="12" font-size="6.5" font-weight="900" fill="#ffffff" text-anchor="middle">5</text>
+      <text x="19" y="14" fill="#e6edf3">HTML5 / CSS3</text>
     </g>
     <!-- Bootstrap -->
     <g transform="translate(420, 245)">
@@ -188,7 +190,10 @@
     <!-- Java -->
     <g transform="translate(298, 273)">
       <rect width="66" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
-      <path d="M 8 13 C 8 13 10 14 12 13 C 14 12 11 10 11 10 C 13 9 14 11 14 11" fill="none" stroke="#ea2d2e" stroke-width="1.2" />
+      <path d="M 6 13 C 8 14 12 14 14 13" stroke="#5382a1" stroke-width="1.1" fill="none" />
+      <path d="M 7 11 C 9 12 11 12 13 11 C 13.5 10 13 9 11 9 C 9 9 7.5 10 7 11 Z" fill="#e76f00" />
+      <path d="M 9 7 C 8 6 10 5 9 3.5" stroke="#ea2d2e" stroke-width="1" fill="none" stroke-linecap="round" />
+      <path d="M 11 7 C 10 6 12 5 11 3.5" stroke="#ea2d2e" stroke-width="1" fill="none" stroke-linecap="round" />
       <text x="18" y="14" fill="#e6edf3">Java</text>
     </g>
     <!-- Spring Boot -->
@@ -243,11 +248,11 @@
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
     <!-- Pandas -->
     <g transform="translate(130, 327)">
-      <rect width="78" height="20" rx="4" fill="#1c2333" stroke="#150458" stroke-width="1.2" />
+      <rect width="78" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <rect x="5" y="5" width="3" height="10" fill="#150458" />
       <rect x="9" y="8" width="3" height="7" fill="#e70488" />
       <rect x="13" y="5" width="3" height="10" fill="#ffca00" />
-      <text x="20" y="14" fill="#79c0ff" font-weight="bold">Pandas</text>
+      <text x="20" y="14" fill="#e6edf3">Pandas</text>
     </g>
     <!-- NumPy -->
     <g transform="translate(214, 327)">
@@ -266,7 +271,8 @@
     <!-- LLMs / AI -->
     <g transform="translate(382, 327)">
       <rect width="84" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
-      <text x="8" y="14" font-size="11" fill="#7ee787">✦</text>
+      <path d="M 10 4 Q 10 10 5 10 Q 10 10 10 16 Q 10 10 15 10 Q 10 10 10 4 Z" fill="#7ee787" />
+      <path d="M 13 6 Q 13 8 11.5 8 Q 13 8 13 10 Q 13 8 14.5 8 Q 13 8 13 6 Z" fill="#a78bfa" />
       <text x="18" y="14" fill="#e6edf3">LLMs / AI</text>
     </g>
   </g>
@@ -276,10 +282,10 @@
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="500">
     <!-- PostgreSQL -->
     <g transform="translate(130, 367)">
-      <rect width="94" height="20" rx="4" fill="#1c2333" stroke="#336791" stroke-width="1.2" />
+      <rect width="94" height="20" rx="4" fill="#1c2333" stroke="#30363d" />
       <circle cx="10" cy="10" r="6" fill="#336791" />
       <text x="10" y="13.5" font-size="7.5" font-weight="bold" fill="#ffffff" text-anchor="middle">PG</text>
-      <text x="21" y="14" fill="#79c0ff" font-weight="bold">PostgreSQL</text>
+      <text x="21" y="14" fill="#e6edf3">PostgreSQL</text>
     </g>
     <!-- MySQL -->
     <g transform="translate(230, 367)">
