@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 115" width="100%" height="100%" style="cursor: pointer;">
+  <style>
+    text, tspan { font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace; }
+  </style>
+    <defs>
+    <filter id="cleanShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+    <linearGradient id="windowGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07030d" />
+      <stop offset="40%" stop-color="#120620" />
+      <stop offset="100%" stop-color="#220b3b" />
+    </linearGradient>
+    <linearGradient id="liquidGlassBorder" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.40" />
+      <stop offset="20%" stop-color="#c4b5fd" stop-opacity="0.22" />
+      <stop offset="65%" stop-color="#7c3aed" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.25" />
+    </linearGradient>
+    <linearGradient id="headerGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.25" />
+    </linearGradient>
+    <linearGradient id="cardGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.04" />
+    </linearGradient>
+    <linearGradient id="cardBorder" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22" />
+      <stop offset="30%" stop-color="#c4b5fd" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.15" />
+    </linearGradient>
+    <linearGradient id="pillGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.09" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="pillBorder" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="40%" stop-color="#c4b5fd" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.18" />
+    </linearGradient>
+    <linearGradient id="dividerFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.0" />
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.20" />
+      <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.50" />
+      <stop offset="75%" stop-color="#ffffff" stop-opacity="0.20" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+  <!-- Frame segment -->
+  <rect x="10" y="0" width="800" height="115" fill="url(#windowGlass)" stroke="url(#liquidGlassBorder)" stroke-width="1.6" />
+
+  <!-- Newe Log Card -->
+  <rect x="30" y="8" width="760" height="98" rx="14" fill="url(#cardGlass)" stroke="#7c3aed" stroke-width="1.2" />
+  <line x1="42" y1="9" x2="778" y2="9" stroke="#ffffff" stroke-opacity="0.30" stroke-width="0.8" />
+
+  <text x="48" y="32" font-size="12.5" font-weight="600" fill="#93c5fd" letter-spacing="0.2">
+    &gt; Newe Log
+    <tspan fill="#94a3b8" font-weight="400" font-size="11.5"> | Logistics &amp; Commercial CRM</tspan>
+  </text>
+
+  <!-- Button highlight -->
+  <g transform="translate(595, 20)">
+    <rect width="180" height="24" rx="12" fill="#7c3aed" fill-opacity="0.25" stroke="#a78bfa" stroke-width="1" />
+    <text x="90" y="16" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="600">[ â†— View Repository ]</text>
+  </g>
+
+  <text x="48" y="58" font-size="11.5" fill="#cbd5e1" font-weight="400" letter-spacing="0.1">
+    <tspan fill="#a855f7" font-weight="600">&gt; </tspan>Sales pipeline centralization &amp; real-time operational KPI dashboards.
+  </text>
+  <text x="48" y="80" font-size="11.5" letter-spacing="0.1">
+    <tspan fill="#a855f7" font-weight="600">&gt; </tspan><tspan fill="#86efac" font-weight="600">Stack:</tspan>
+    <tspan fill="#f1f5f9"> React &#8226; Node.js &#8226; TypeScript &#8226; MySQL &#8226; Express</tspan>
+  </text>
+</svg>

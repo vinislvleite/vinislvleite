@@ -1,0 +1,336 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 560" width="100%" height="100%" style="cursor: default; user-select: none;">
+  <style>
+    text, tspan { font-family: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace; }
+  </style>
+    <defs>
+    <filter id="cleanShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+    <linearGradient id="windowGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#07030d" />
+      <stop offset="40%" stop-color="#120620" />
+      <stop offset="100%" stop-color="#220b3b" />
+    </linearGradient>
+    <linearGradient id="liquidGlassBorder" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.40" />
+      <stop offset="20%" stop-color="#c4b5fd" stop-opacity="0.22" />
+      <stop offset="65%" stop-color="#7c3aed" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.25" />
+    </linearGradient>
+    <linearGradient id="headerGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.25" />
+    </linearGradient>
+    <linearGradient id="cardGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.04" />
+    </linearGradient>
+    <linearGradient id="cardBorder" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22" />
+      <stop offset="30%" stop-color="#c4b5fd" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.15" />
+    </linearGradient>
+    <linearGradient id="pillGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.09" />
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="pillBorder" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="40%" stop-color="#c4b5fd" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.18" />
+    </linearGradient>
+    <linearGradient id="dividerFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.0" />
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.20" />
+      <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.50" />
+      <stop offset="75%" stop-color="#ffffff" stop-opacity="0.20" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+  <clipPath id="topClip">
+    <path d="M 10 34 Q 10 10 34 10 L 786 10 Q 810 10 810 34 L 810 560 L 10 560 Z" />
+  </clipPath>
+  <clipPath id="clipPhrase1">
+    <rect x="34" y="104" width="0" height="35">
+      <animate attributeName="width" values="0; 400; 400; 0; 0; 0; 0" keyTimes="0; 0.30; 0.475; 0.50; 0.50; 0.975; 1" dur="8s" repeatCount="indefinite" />
+    </rect>
+  </clipPath>
+  <clipPath id="clipPhrase2">
+    <rect x="34" y="104" width="0" height="35">
+      <animate attributeName="width" values="0; 0; 0; 0; 496; 496; 0" keyTimes="0; 0.475; 0.50; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
+    </rect>
+  </clipPath>
+
+  <!-- Main Window Frame Top -->
+  <path d="M 10 34 Q 10 10 34 10 L 786 10 Q 810 10 810 34 L 810 560 L 10 560 Z" fill="url(#windowGlass)" stroke="url(#liquidGlassBorder)" stroke-width="1.6" filter="url(#cleanShadow)" />
+
+  <g clip-path="url(#topClip)">
+    <!-- Header Bar -->
+    <rect x="10" y="10" width="800" height="44" fill="url(#headerGlass)" />
+    <line x1="10" y1="54" x2="810" y2="54" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1" />
+    <line x1="34" y1="11" x2="786" y2="11" stroke="#ffffff" stroke-opacity="0.40" stroke-width="0.8" />
+
+    <!-- Traffic Lights -->
+    <circle cx="34" cy="32" r="6" fill="#ff5f56" stroke="#e0443e" stroke-width="0.8" />
+    <ellipse cx="32.5" cy="29.5" rx="2.5" ry="1.2" fill="#ffffff" opacity="0.65" />
+    <circle cx="54" cy="32" r="6" fill="#ffbd2e" stroke="#dea123" stroke-width="0.8" />
+    <ellipse cx="52.5" cy="29.5" rx="2.5" ry="1.2" fill="#ffffff" opacity="0.65" />
+    <circle cx="74" cy="32" r="6" fill="#27c93f" stroke="#1aab29" stroke-width="0.8" />
+    <ellipse cx="72.5" cy="29.5" rx="2.5" ry="1.2" fill="#ffffff" opacity="0.65" />
+
+    <!-- Title Pill -->
+    <rect x="290" y="20" width="240" height="26" rx="13" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.15" stroke-width="0.8" />
+    <text x="410" y="37" text-anchor="middle" fill="#cbd5e1" font-size="12" font-weight="500" letter-spacing="0.3">vinicius@workstation: ~ (zsh)</text>
+
+    <!-- Shell Prompt -->
+    <text x="34" y="80" font-size="14.5" letter-spacing="0.2">
+      <tspan fill="#4ade80" font-weight="600">vinicius@developer</tspan>
+      <tspan fill="#94a3b8">:</tspan>
+      <tspan fill="#60a5fa">~</tspan>
+      <tspan fill="#94a3b8">$ </tspan>
+      <tspan fill="#f1f5f9">neofetch --full-profile</tspan>
+    </text>
+    <line x1="34" y1="94" x2="786" y2="94" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1" />
+
+    <!-- Typewriter -->
+    <g clip-path="url(#clipPhrase1)">
+      <text x="34" y="124" font-size="15.5" font-weight="500" fill="#d8b4fe" letter-spacing="0.2">&gt; Mastering React, Next.js and TypeScript</text>
+    </g>
+    <g clip-path="url(#clipPhrase2)">
+      <text x="34" y="124" font-size="15.5" font-weight="500" fill="#d8b4fe" letter-spacing="0.2">&gt; Full-Stack Developer | Modern Front-End Specialist</text>
+    </g>
+    <rect x="34" y="108" width="8" height="20" fill="#ffffff">
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="x" values="34; 440; 440; 34; 536; 536; 34" keyTimes="0; 0.30; 0.475; 0.50; 0.80; 0.975; 1" dur="8s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- CARD 1: ABOUT -->
+    <rect x="30" y="146" width="760" height="90" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
+    <line x1="42" y1="147" x2="778" y2="147" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
+    <text x="48" y="172" font-size="12.5" letter-spacing="0.2">
+      <tspan fill="#a855f7" font-weight="600">&gt; </tspan>
+      <tspan fill="#4ade80" font-weight="600">ABOUT: </tspan>
+      <tspan fill="#ffffff">Software Engineering student</tspan>
+      <tspan fill="#cbd5e1"> at </tspan>
+      <tspan fill="#60a5fa" font-weight="600">FATEC SJC</tspan>
+    </text>
+    <text x="48" y="194" font-size="12" fill="#cbd5e1" letter-spacing="0.2">
+      <tspan fill="#a855f7" font-weight="600">&gt; </tspan>Building production-ready architectures &amp; enterprise web systems.
+    </text>
+    <text x="48" y="216" font-size="12" fill="#94a3b8" letter-spacing="0.2">
+      <tspan fill="#a855f7" font-weight="600">&gt; </tspan>Real-world client solutions: <tspan fill="#60a5fa" font-weight="600">GSW Solucoes Integradas</tspan> and <tspan fill="#60a5fa" font-weight="600">Newe Log</tspan>.
+    </text>
+
+    <!-- CARD 2: COMPLETE TECH STACK -->
+    <rect x="30" y="252" width="760" height="294" rx="14" fill="url(#cardGlass)" stroke="url(#cardBorder)" stroke-width="1" />
+    <line x1="42" y1="253" x2="778" y2="253" stroke="#ffffff" stroke-opacity="0.25" stroke-width="0.8" />
+    <text x="48" y="278" font-size="13" font-weight="600" letter-spacing="0.5" fill="#d8b4fe">&gt; [ 01. COMPLETE TECH STACK ]</text>
+
+    <!-- FRONT-END -->
+    <text x="48" y="308" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; FRONT-END:</text>
+    <g font-size="11" font-weight="500">
+      <g transform="translate(148, 293)">
+        <rect width="70" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <ellipse cx="12" cy="11" rx="6" ry="2.2" fill="none" stroke="#61dafb" stroke-width="0.8" /><ellipse cx="12" cy="11" rx="6" ry="2.2" fill="none" stroke="#61dafb" stroke-width="0.8" transform="rotate(60, 12, 11)" /><ellipse cx="12" cy="11" rx="6" ry="2.2" fill="none" stroke="#61dafb" stroke-width="0.8" transform="rotate(120, 12, 11)" /><circle cx="12" cy="11" r="1.2" fill="#61dafb" />
+        <text x="24" y="15" fill="#f1f5f9">React</text>
+      </g>
+      <g transform="translate(224, 293)">
+        <rect width="78" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="6" fill="#000000" stroke="#ffffff" stroke-width="0.8" /><text x="12" y="14.5" font-size="8" font-weight="bold" fill="#ffffff" text-anchor="middle">N</text>
+        <text x="24" y="15" fill="#f1f5f9">Next.js</text>
+      </g>
+      <g transform="translate(308, 293)">
+        <rect width="98" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <rect x="6" y="5" width="12" height="12" rx="2" fill="#3178c6" /><text x="12" y="14" font-size="7.5" font-weight="bold" fill="#ffffff" text-anchor="middle">TS</text>
+        <text x="24" y="15" fill="#f1f5f9">TypeScript</text>
+      </g>
+      <g transform="translate(412, 293)">
+        <rect width="98" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <rect x="6" y="5" width="12" height="12" rx="2" fill="#f7df1e" /><text x="12" y="14" font-size="7.5" font-weight="bold" fill="#000000" text-anchor="middle">JS</text>
+        <text x="24" y="15" fill="#f1f5f9">JavaScript</text>
+      </g>
+      <g transform="translate(516, 293)">
+        <rect width="112" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="6" fill="#000020" stroke="#61dafb" stroke-width="0.8" /><text x="12" y="14" font-size="7" font-weight="bold" fill="#61dafb" text-anchor="middle">RN</text>
+        <text x="24" y="15" fill="#f1f5f9">React Native</text>
+      </g>
+      <g transform="translate(634, 293)">
+        <rect width="64" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <polygon points="12,5 8,11 12,11 11,17 16,10 12,10" fill="#bd34fe" /><polygon points="12,6 9,11 12,11 11,16 15,10 12,10" fill="#ffea83" />
+        <text x="23" y="15" fill="#f1f5f9">Vite</text>
+      </g>
+      <!-- Row 2 -->
+      <g transform="translate(148, 323)">
+        <rect width="84" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <path d="M 6 11 C 7 8 9 8 10 10 C 11 12 13 12 14 10 C 13 13 11 13 10 11 C 9 9 7 9 6 11 Z" fill="#38bdf8" />
+        <text x="22" y="15" fill="#f1f5f9">Tailwind</text>
+      </g>
+      <g transform="translate(238, 323)">
+        <rect width="108" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <rect x="6" y="5" width="12" height="12" rx="2" fill="#264de4" /><text x="12" y="14" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">CSS</text>
+        <text x="24" y="15" fill="#f1f5f9">CSS Modules</text>
+      </g>
+      <g transform="translate(352, 323)">
+        <rect width="70" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="9" cy="8" r="2" fill="#f24e1e" /><circle cx="13" cy="8" r="2" fill="#ff7262" /><circle cx="9" cy="12" r="2" fill="#a259ff" /><circle cx="13" cy="12" r="2" fill="#1abcfe" /><circle cx="9" cy="15" r="2" fill="#0acf83" />
+        <text x="22" y="15" fill="#f1f5f9">Figma</text>
+      </g>
+      <g transform="translate(428, 323)">
+        <rect width="112" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <polygon points="7,5 17,5 16.2,14.5 12,16.5 7.8,14.5" fill="#e34f26" /><polygon points="12,6 15.5,6 15,13.8 12,15.5" fill="#f06529" /><text x="12" y="13" font-size="6.5" font-weight="900" fill="#ffffff" text-anchor="middle">5</text>
+        <text x="23" y="15" fill="#f1f5f9">HTML5 / CSS3</text>
+      </g>
+      <g transform="translate(546, 323)">
+        <rect width="94" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <rect x="6" y="5" width="12" height="12" rx="2" fill="#7952b3" /><text x="12" y="14" font-size="7.5" font-weight="bold" fill="#fff" text-anchor="middle">B</text>
+        <text x="24" y="15" fill="#f1f5f9">Bootstrap</text>
+      </g>
+    </g>
+
+    <!-- BACK-END -->
+    <text x="48" y="368" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; BACK-END:</text>
+    <g font-size="11" font-weight="500">
+      <g transform="translate(148, 353)">
+        <rect width="80" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <polygon points="12,5 17,8 17,14 12,17 7,14 7,8" fill="#339933" /><text x="12" y="13.5" font-size="6.5" font-weight="bold" fill="#fff" text-anchor="middle">JS</text>
+        <text x="24" y="15" fill="#f1f5f9">Node.js</text>
+      </g>
+      <g transform="translate(234, 353)">
+        <rect width="80" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="6" fill="#30363d" /><text x="12" y="14" font-size="7.5" font-weight="bold" fill="#fff" text-anchor="middle">ex</text>
+        <text x="24" y="15" fill="#f1f5f9">Express</text>
+      </g>
+      <g transform="translate(320, 353)">
+        <rect width="70" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <path d="M 7 14 C 9 15 13 15 15 14" stroke="#5382a1" stroke-width="1.1" fill="none" /><path d="M 8 12 C 10 13 12 13 14 12 C 14.5 11 14 10 12 10 C 10 10 8.5 11 8 12 Z" fill="#e76f00" /><path d="M 10 8 C 9 7 11 6 10 4.5" stroke="#ea2d2e" stroke-width="1" fill="none" stroke-linecap="round" /><path d="M 12 8 C 11 7 13 6 12 4.5" stroke="#ea2d2e" stroke-width="1" fill="none" stroke-linecap="round" />
+        <text x="21" y="15" fill="#f1f5f9">Java</text>
+      </g>
+      <g transform="translate(396, 353)">
+        <rect width="102" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="6" fill="#6db33f" /><path d="M 9 14 C 9 11 11 8 15 8 C 15 11 13 14 9 14 Z" fill="#ffffff" />
+        <text x="24" y="15" fill="#f1f5f9">Spring Boot</text>
+      </g>
+      <g transform="translate(504, 353)">
+        <rect width="108" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="6" fill="#30363d" stroke="#6db33f" stroke-width="0.8" /><text x="12" y="14" font-size="6.5" font-weight="bold" fill="#6db33f" text-anchor="middle">SC</text>
+        <text x="24" y="15" fill="#f1f5f9">Spring Cloud</text>
+      </g>
+      <!-- Row 2 -->
+      <g transform="translate(148, 383)">
+        <rect width="78" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <path d="M 7 7 L 11 7 L 11 9 L 14 9 L 14 13 L 12 13 L 12 15 L 8 15 L 8 13 L 6 13 L 6 9 L 9 9 L 9 7 Z" fill="#3776ab" /><circle cx="9" cy="8" r="0.8" fill="#fff" /><circle cx="11" cy="14" r="0.8" fill="#fff" />
+        <text x="21" y="15" fill="#f1f5f9">Python</text>
+      </g>
+      <g transform="translate(232, 383)">
+        <rect width="70" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <path d="M 9 6 L 13 6 L 13 9 L 15 14 L 7 14 L 9 9 Z" fill="none" stroke="#fff" stroke-width="0.8" />
+        <text x="21" y="15" fill="#f1f5f9">Flask</text>
+      </g>
+      <g transform="translate(308, 383)">
+        <rect width="100" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <polygon points="7,16 13,6 16,15" fill="#2d3748" stroke="#5a67d8" stroke-width="0.8" />
+        <text x="23" y="15" fill="#f1f5f9">Prisma ORM</text>
+      </g>
+      <g transform="translate(414, 383)">
+        <rect width="68" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="11" cy="11" r="5" fill="#d63aff" /><text x="11" y="14" font-size="6" font-weight="bold" fill="#fff" text-anchor="middle">JWT</text>
+        <text x="21" y="15" fill="#f1f5f9">JWT</text>
+      </g>
+    </g>
+
+    <!-- DATA & AI -->
+    <text x="48" y="428" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; DATA &amp; AI:</text>
+    <g font-size="11" font-weight="500">
+      <g transform="translate(148, 413)">
+        <rect width="80" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <rect x="6" y="6" width="3" height="10" fill="#150458" /><rect x="10" y="9" width="3" height="7" fill="#e70488" /><rect x="14" y="6" width="3" height="10" fill="#ffca00" />
+        <text x="23" y="15" fill="#f1f5f9">Pandas</text>
+      </g>
+      <g transform="translate(234, 413)">
+        <rect width="78" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <rect x="6" y="5" width="12" height="12" rx="2" fill="#013243" stroke="#4dabcf" stroke-width="0.8" /><text x="12" y="14" font-size="7" font-weight="bold" fill="#4dabcf" text-anchor="middle">NP</text>
+        <text x="24" y="15" fill="#f1f5f9">NumPy</text>
+      </g>
+      <g transform="translate(318, 413)">
+        <rect width="82" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="5" fill="#f37626" /><circle cx="12" cy="11" r="2.5" fill="#1c2333" />
+        <text x="23" y="15" fill="#f1f5f9">Jupyter</text>
+      </g>
+      <g transform="translate(406, 413)">
+        <rect width="92" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <path d="M 11 5 Q 11 11 6 11 Q 11 11 11 17 Q 11 11 16 11 Q 11 11 11 5 Z" fill="#7ee787" /><path d="M 14 7 Q 14 9 12.5 9 Q 14 9 14 11 Q 14 9 15.5 9 Q 14 9 14 7 Z" fill="#a78bfa" />
+        <text x="21" y="15" fill="#f1f5f9">LLMs / AI</text>
+      </g>
+    </g>
+
+    <!-- DATABASES -->
+    <text x="48" y="472" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; DATABASES:</text>
+    <g font-size="11" font-weight="500">
+      <g transform="translate(148, 457)">
+        <rect width="102" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="6" fill="#336791" /><text x="12" y="14.5" font-size="7.5" font-weight="bold" fill="#ffffff" text-anchor="middle">PG</text>
+        <text x="25" y="15" fill="#f1f5f9">PostgreSQL</text>
+      </g>
+      <g transform="translate(256, 457)">
+        <rect width="74" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <ellipse cx="12" cy="7" rx="5" ry="1.8" fill="#00758f" /><path d="M 7 7 L 7 13 Q 12 16 17 13 L 17 7 Z" fill="none" stroke="#00758f" stroke-width="0.9" />
+        <text x="23" y="15" fill="#f1f5f9">MySQL</text>
+      </g>
+      <g transform="translate(336, 457)">
+        <rect width="88" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <path d="M 12 5 C 15 8 15.5 11 12 16 C 8.5 11 9 8 12 5 Z" fill="#47a248" /><line x1="12" y1="6" x2="12" y2="15" stroke="#ffffff" stroke-width="0.6" />
+        <text x="23" y="15" fill="#f1f5f9">MongoDB</text>
+      </g>
+      <g transform="translate(430, 457)">
+        <rect width="68" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <polygon points="11,6 16,8.5 11,11 6,8.5" fill="#dc382d" /><polygon points="6,9 11,11.5 16,9 16,12 11,14.5 6,12" fill="#a3241b" /><polygon points="6,12 11,14.5 16,12 16,15 11,17.5 6,15" fill="#751610" />
+        <text x="22" y="15" fill="#f1f5f9">Redis</text>
+      </g>
+      <g transform="translate(504, 457)">
+        <rect width="94" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="5.5" fill="#14496b" stroke="#3288a2" stroke-width="0.8" /><circle cx="12" cy="11" r="2.5" fill="#ffffff" />
+        <text x="24" y="15" fill="#f1f5f9">Cassandra</text>
+      </g>
+      <g transform="translate(604, 457)">
+        <rect width="72" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="9" cy="11" r="2.5" fill="#008cc1" /><circle cx="15" cy="8" r="2" fill="#008cc1" /><circle cx="15" cy="14" r="2" fill="#008cc1" /><line x1="9" y1="11" x2="15" y2="8" stroke="#008cc1" stroke-width="0.8" /><line x1="9" y1="11" x2="15" y2="14" stroke="#008cc1" stroke-width="0.8" />
+        <text x="22" y="15" fill="#f1f5f9">Neo4j</text>
+      </g>
+    </g>
+
+    <!-- DEVOPS -->
+    <text x="48" y="516" font-size="11.5" font-weight="600" letter-spacing="0.4" fill="#c4b5fd">&gt; DEVOPS:</text>
+    <g font-size="11" font-weight="500">
+      <g transform="translate(148, 501)">
+        <rect width="78" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <rect x="6" y="8" width="2" height="1.8" fill="#2496ed" /><rect x="9" y="8" width="2" height="1.8" fill="#2496ed" /><rect x="12" y="8" width="2" height="1.8" fill="#2496ed" /><path d="M 5 11 Q 10 11 15 9.5 Q 14.5 14 9 14 Q 5 14 5 11 Z" fill="#2496ed" />
+        <text x="23" y="15" fill="#f1f5f9">Docker</text>
+      </g>
+      <g transform="translate(232, 501)">
+        <rect width="108" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="6" fill="#f05032" /><text x="12" y="14.5" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">Git</text>
+        <text x="24" y="15" fill="#f1f5f9">Git &amp; GitHub</text>
+      </g>
+      <g transform="translate(346, 501)">
+        <rect width="120" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="6" fill="#2088ff" /><text x="12" y="14.5" font-size="7" font-weight="bold" fill="#fff" text-anchor="middle">CI</text>
+        <text x="24" y="15" fill="#f1f5f9">GitHub Actions</text>
+      </g>
+      <g transform="translate(472, 501)">
+        <rect width="84" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="6" fill="#ff6c37" /><text x="12" y="14.5" font-size="6.5" font-weight="bold" fill="#fff" text-anchor="middle">PM</text>
+        <text x="24" y="15" fill="#f1f5f9">Postman</text>
+      </g>
+      <g transform="translate(562, 501)">
+        <rect width="74" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="6" fill="#fcc624" /><text x="12" y="14.5" font-size="7" font-weight="bold" fill="#000" text-anchor="middle">L</text>
+        <text x="24" y="15" fill="#f1f5f9">Linux</text>
+      </g>
+      <g transform="translate(642, 501)">
+        <rect width="86" height="22" rx="11" fill="url(#pillGlass)" stroke="url(#pillBorder)" stroke-width="0.9" />
+        <circle cx="12" cy="11" r="6" fill="#ff9900" /><text x="12" y="14.5" font-size="6" font-weight="bold" fill="#000" text-anchor="middle">AWS</text>
+        <text x="24" y="15" fill="#f1f5f9">AWS EC2</text>
+      </g>
+    </g>
+  </g>
+</svg>
