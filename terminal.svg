@@ -1,43 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 660" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 740" width="100%" height="100%">
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
       <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7c3aed" flood-opacity="0.22" />
     </filter>
 
-    <!-- Máscara animada para digitar a Frase 1 -->
+    <!-- Máscara animada Frase 1 (com largura de 680 para NUNCA cortar o texto) -->
     <clipPath id="clipPhrase1">
       <rect x="28" y="90" width="0" height="35">
-        <animate attributeName="width" values="0; 450; 450; 0; 0; 0; 0" keyTimes="0; 0.32; 0.46; 0.50; 0.50; 0.98; 1" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 650; 650; 0; 0; 0; 0" keyTimes="0; 0.32; 0.46; 0.50; 0.50; 0.98; 1" dur="8s" repeatCount="indefinite" />
       </rect>
     </clipPath>
 
-    <!-- Máscara animada para digitar a Frase 2 -->
+    <!-- Máscara animada Frase 2 (com largura de 680 para NUNCA cortar o texto) -->
     <clipPath id="clipPhrase2">
       <rect x="28" y="90" width="0" height="35">
-        <animate attributeName="width" values="0; 0; 0; 0; 470; 470; 0" keyTimes="0; 0.48; 0.50; 0.50; 0.82; 0.96; 1" dur="8s" repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 0; 0; 0; 650; 650; 0" keyTimes="0; 0.48; 0.50; 0.50; 0.82; 0.96; 1" dur="8s" repeatCount="indefinite" />
       </rect>
     </clipPath>
   </defs>
 
   <!-- Janela Principal -->
-  <rect x="2" y="2" width="796" height="656" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
+  <rect x="2" y="2" width="796" height="736" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" filter="url(#shadow)" />
 
   <!-- Barra macOS -->
-  <path d="M 2 12 Q 2 2 12 2 L 788 2 Q 798 2 798 12 L 798 36 L 2 36 Z" fill="#161b22" />
-  <line x1="2" y1="36" x2="798" y2="36" stroke="#30363d" stroke-width="1" />
+  <path d="M 2 12 Q 2 2 12 2 L 788 2 Q 798 2 798 12 L 798 38 L 2 38 Z" fill="#161b22" />
+  <line x1="2" y1="38" x2="798" y2="38" stroke="#30363d" stroke-width="1" />
 
   <!-- Bolinhas macOS -->
-  <circle cx="22" cy="19" r="5" fill="#ff5f56" />
-  <circle cx="38" cy="19" r="5" fill="#ffbd2e" />
-  <circle cx="54" cy="19" r="5" fill="#27c93f" />
+  <circle cx="24" cy="20" r="5.5" fill="#ff5f56" />
+  <circle cx="42" cy="20" r="5.5" fill="#ffbd2e" />
+  <circle cx="60" cy="20" r="5.5" fill="#27c93f" />
 
-  <text x="400" y="23" text-anchor="middle" fill="#8b949e" font-size="11.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace">
+  <text x="400" y="24" text-anchor="middle" fill="#8b949e" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace">
     vinicius@workstation: ~ (zsh)
   </text>
 
   <!-- Linha de Prompt -->
-  <g font-family="'Fira Code', Consolas, monospace" font-size="13">
-    <text x="28" y="66">
+  <g font-family="'Fira Code', Consolas, monospace" font-size="14">
+    <text x="28" y="68">
       <tspan fill="#3fb950" font-weight="600">vinicius@developer</tspan>
       <tspan fill="#8b949e">:</tspan>
       <tspan fill="#58a6ff">~</tspan>
@@ -45,141 +45,144 @@
       <tspan fill="#e6edf3">neofetch --full-profile</tspan>
     </text>
   </g>
-  <line x1="28" y1="78" x2="770" y2="78" stroke="#21262d" stroke-width="1" />
+  <line x1="28" y1="80" x2="770" y2="80" stroke="#21262d" stroke-width="1" />
 
-  <!-- Digitação Letra por Letra Frase 1 -->
+  <!-- Frase 1 (Sem corte de texto) -->
   <g clip-path="url(#clipPhrase1)">
-    <text x="28" y="112" font-family="'Fira Code', Consolas, monospace" font-size="15" font-weight="600" fill="#a78bfa">
+    <text x="28" y="112" font-family="'Fira Code', Consolas, monospace" font-size="16" font-weight="600" fill="#a78bfa">
       &gt; Mastering React, Next.js and TypeScript
     </text>
   </g>
 
-  <!-- Digitação Letra por Letra Frase 2 -->
+  <!-- Frase 2 (Sem corte de texto) -->
   <g clip-path="url(#clipPhrase2)">
-    <text x="28" y="112" font-family="'Fira Code', Consolas, monospace" font-size="15" font-weight="600" fill="#a78bfa">
+    <text x="28" y="112" font-family="'Fira Code', Consolas, monospace" font-size="16" font-weight="600" fill="#a78bfa">
       &gt; Full-Stack Developer | Foco em Front-End Moderno
     </text>
   </g>
 
-  <!-- Cursor que corre junto com as letras digitadas -->
-  <rect x="28" y="98" width="8" height="17" fill="#ffffff">
+  <!-- Cursor dinâmico que acompanha o final do texto -->
+  <rect x="28" y="96" width="9" height="19" fill="#ffffff">
     <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
-    <animate attributeName="x" values="28; 390; 390; 28; 430; 430; 28" keyTimes="0; 0.32; 0.46; 0.50; 0.82; 0.96; 1" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="x" values="28; 430; 430; 28; 480; 480; 28" keyTimes="0; 0.32; 0.46; 0.50; 0.82; 0.96; 1" dur="8s" repeatCount="indefinite" />
   </rect>
 
-  <!-- APRESENTAÇÃO INTEGRADA DENTRO DO TERMINAL -->
-  <rect x="28" y="130" width="744" height="42" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  <text x="44" y="156" font-family="'Fira Code', Consolas, monospace" font-size="11.5" fill="#c9d1d9">
-    <tspan fill="#7ee787" font-weight="600">ABOUT:</tspan> Cursando Desenvolvimento de Software e atuando com clientes reais (GSW e Newe Log).
+  <!-- ABOUT -->
+  <rect x="28" y="130" width="744" height="46" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="158" font-family="'Fira Code', Consolas, monospace" font-size="12.5" fill="#c9d1d9">
+    <tspan fill="#7ee787" font-weight="600">ABOUT:</tspan> Cursando Desenvolvimento de Software na FATEC SJC e atuando com clientes reais (GSW e Newe Log).
   </text>
 
-  <!-- SEÇÃO 1: STACK & TECNOLOGIAS -->
-  <rect x="28" y="182" width="744" height="120" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  <text x="44" y="204" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#7c3aed">
+  <!-- SEÇÃO 1: STACK TECNOLOGICA (Fontes maiores e legíveis) -->
+  <rect x="28" y="186" width="744" height="136" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="210" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
     [ 01. STACK TECNOLOGICA ]
   </text>
 
-  <g font-family="'Fira Code', Consolas, monospace" font-size="12">
-    <text x="44" y="226">
+  <g font-family="'Fira Code', Consolas, monospace" font-size="13">
+    <text x="44" y="236">
       <tspan fill="#a78bfa" font-weight="600">FRONT-END:</tspan>
       <tspan fill="#e6edf3"> React • Next.js • Vite • TypeScript • Tailwind CSS • Figma</tspan>
     </text>
-    <text x="44" y="248">
+    <text x="44" y="260">
       <tspan fill="#a78bfa" font-weight="600">BACK-END:</tspan>
       <tspan fill="#e6edf3">  Node.js • Java (Spring Boot &amp; Spring Cloud) • Python</tspan>
     </text>
-    <text x="44" y="270">
+    <text x="44" y="284">
       <tspan fill="#a78bfa" font-weight="600">DATABASES:</tspan>
       <tspan fill="#e6edf3"> MySQL • MongoDB • Redis • Apache Cassandra • Neo4j</tspan>
     </text>
-    <text x="44" y="292">
+    <text x="44" y="308">
       <tspan fill="#a78bfa" font-weight="600">DEVOPS:</tspan>
       <tspan fill="#e6edf3">    Docker • Git • GitHub Actions • Postman • Linux</tspan>
     </text>
   </g>
 
   <!-- SEÇÃO 2: PROJETOS COM CLIENTES REAIS -->
-  <rect x="28" y="312" width="744" height="142" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  <text x="44" y="334" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#7c3aed">
+  <rect x="28" y="332" width="744" height="166" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="356" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
     [ 02. PROJETOS CORPORATIVOS COM CLIENTES REAIS ]
   </text>
 
   <!-- Projeto 1: GSW -->
   <g font-family="'Fira Code', Consolas, monospace">
-    <text x="44" y="358" font-size="12.5" font-weight="bold" fill="#58a6ff">
+    <text x="44" y="382" font-size="13" font-weight="bold" fill="#58a6ff">
       &gt; GSW Solucoes Integradas
-      <tspan fill="#8b949e" font-weight="normal" font-size="11.5"> | Sistema de Apontamento de Horas &amp; Financeiro</tspan>
+      <tspan fill="#8b949e" font-weight="normal" font-size="12"> | Sistema de Apontamento de Horas &amp; Financeiro</tspan>
     </text>
-    <text x="58" y="376" font-size="11" fill="#8b949e">
+    <text x="58" y="401" font-size="12" fill="#8b949e">
       Gestao de horas, alocacao de squads e auditoria financeira de equipes distribuidas.
     </text>
-    <text x="58" y="394" font-size="11">
+    <text x="58" y="420" font-size="12">
       <tspan fill="#7ee787">Stack:</tspan>
       <tspan fill="#e6edf3"> Next.js • TypeScript • Spring Boot • Spring Cloud • MySQL • Docker</tspan>
     </text>
 
     <!-- Projeto 2: Newe Log -->
-    <text x="44" y="420" font-size="12.5" font-weight="bold" fill="#58a6ff">
+    <text x="44" y="446" font-size="13" font-weight="bold" fill="#58a6ff">
       &gt; Newe Log
-      <tspan fill="#8b949e" font-weight="normal" font-size="11.5"> | Sistema CRM &amp; Gestao Comercial de Transportes</tspan>
+      <tspan fill="#8b949e" font-weight="normal" font-size="12"> | Sistema CRM &amp; Gestao Comercial de Transportes</tspan>
     </text>
-    <text x="58" y="438" font-size="11" fill="#8b949e">
+    <text x="58" y="465" font-size="12" fill="#8b949e">
       Centralizacao de funil de vendas, automacao de checklists e dashboards operacionais.
     </text>
-    <text x="58" y="456" font-size="11">
+    <text x="58" y="484" font-size="12">
       <tspan fill="#7ee787">Stack:</tspan>
       <tspan fill="#e6edf3"> React • Node.js • TypeScript • MySQL • Express</tspan>
     </text>
   </g>
 
-  <!-- SEÇÃO 3: ESTATISTICAS DE CONTRIBUICAO (STREAK STATS INTEGRADO NO TERMINAL) -->
-  <rect x="28" y="464" width="744" height="134" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  <text x="44" y="485" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#7c3aed">
-    [ 03. ESTATISTICAS DE DESENVOLVIMENTO ]
+  <!-- SEÇÃO 3: ESTATISTICAS DE DESENVOLVIMENTO (EXATAMENTE COMO NA IMAGEM) -->
+  <rect x="28" y="508" width="744" height="148" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <text x="44" y="530" font-family="'Fira Code', monospace" font-size="12.5" font-weight="bold" fill="#7c3aed">
+    [ 03. ESTATISTICAS DE CONTRIBUICAO ]
   </text>
 
   <!-- Divisórias verticais -->
-  <line x1="275" y1="492" x2="275" y2="586" stroke="#30363d" stroke-width="1" />
-  <line x1="525" y1="492" x2="525" y2="586" stroke="#30363d" stroke-width="1" />
+  <line x1="275" y1="538" x2="275" y2="640" stroke="#30363d" stroke-width="1.2" />
+  <line x1="525" y1="538" x2="525" y2="640" stroke="#30363d" stroke-width="1.2" />
 
   <!-- Total Contributions -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
-    <text x="151" y="528" font-size="28" font-weight="bold" fill="#ff7b72">466</text>
-    <text x="151" y="552" font-size="12" font-weight="600" fill="#f472b6">Total Contributions</text>
-    <text x="151" y="574" font-size="10.5" fill="#8b949e">Mar 13, 2024 - Present</text>
+    <text x="151" y="574" font-size="32" font-weight="bold" fill="#ff7b72">466</text>
+    <text x="151" y="600" font-size="13" font-weight="600" fill="#f472b6">Total Contributions</text>
+    <text x="151" y="624" font-size="11.5" fill="#8b949e">Mar 13, 2024 - Present</text>
   </g>
 
   <!-- Current Streak com Anel Roxo e Chama -->
   <g text-anchor="middle">
-    <circle cx="400" cy="522" r="23" fill="none" stroke="#7c3aed" stroke-width="3" />
+    <circle cx="400" cy="566" r="26" fill="none" stroke="#7c3aed" stroke-width="3.5" />
     <!-- Chama no topo -->
-    <path d="M 400 492 C 396 498 393 502 393 506 C 393 510 396 513 400 513 C 404 513 407 510 407 506 C 407 502 404 498 400 492 Z" fill="#a78bfa" />
-    <path d="M 400 500 C 398 503 397 505 397 507 C 397 509 398 511 400 511 C 402 511 403 509 403 507 C 403 505 402 503 400 500 Z" fill="#79c0ff" />
+    <path d="M 400 532 C 395 539 392 543 392 548 C 392 553 395 556 400 556 C 405 556 408 553 408 548 C 408 543 405 539 400 532 Z" fill="#a78bfa" />
+    <path d="M 400 540 C 397 544 396 546 396 549 C 396 551 397 553 400 553 C 403 553 404 551 404 549 C 404 546 403 544 400 540 Z" fill="#79c0ff" />
     <!-- Valor no centro -->
-    <text x="400" y="529" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="bold" fill="#79c0ff">0</text>
-    <text x="400" y="560" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="bold" fill="#ffffff">Current Streak</text>
-    <text x="400" y="578" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" fill="#8b949e">Nov 7</text>
+    <text x="400" y="574" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="bold" fill="#79c0ff">0</text>
+    <text x="400" y="608" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13.5" font-weight="bold" fill="#ffffff">Current Streak</text>
+    <text x="400" y="628" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" fill="#8b949e">Nov 7</text>
   </g>
 
   <!-- Longest Streak -->
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
-    <text x="649" y="528" font-size="28" font-weight="bold" fill="#ff7b72">8</text>
-    <text x="649" y="552" font-size="12" font-weight="600" fill="#f472b6">Longest Streak</text>
-    <text x="649" y="574" font-size="10.5" fill="#8b949e">Oct 19 - Oct 26</text>
+    <text x="649" y="574" font-size="32" font-weight="bold" fill="#ff7b72">8</text>
+    <text x="649" y="600" font-size="13" font-weight="600" fill="#f472b6">Longest Streak</text>
+    <text x="649" y="624" font-size="11.5" fill="#8b949e">Oct 19 - Oct 26</text>
   </g>
 
-  <!-- SEÇÃO 4: CONTATOS & INFO (SEM STATUS) -->
-  <rect x="28" y="608" width="744" height="40" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
-  <g font-family="'Fira Code', Consolas, monospace" font-size="11.5">
-    <text x="44" y="633">
-      <tspan fill="#a78bfa" font-weight="600">LOCAL:</tspan>
+  <!-- SEÇÃO 4: GRADUAÇÃO FATEC SJC & CONTATOS -->
+  <rect x="28" y="666" width="744" height="60" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1" />
+  <g font-family="'Fira Code', Consolas, monospace" font-size="12">
+    <text x="44" y="690">
+      <tspan fill="#a78bfa" font-weight="bold">GRADUACAO:</tspan>
+      <tspan fill="#7ee787" font-weight="bold"> Desenvolvimento de Software Multiplataforma</tspan>
+      <tspan fill="#8b949e"> na </tspan>
+      <tspan fill="#ffffff" font-weight="bold">FATEC SJC</tspan>
+    </text>
+    <text x="44" y="714">
+      <tspan fill="#a78bfa" font-weight="bold">LOCAL:</tspan>
       <tspan fill="#e6edf3"> Sao Jose dos Campos, SP</tspan>
       <tspan fill="#8b949e">  |  </tspan>
-      <tspan fill="#a78bfa" font-weight="600">LINKEDIN:</tspan>
+      <tspan fill="#a78bfa" font-weight="bold">LINKEDIN:</tspan>
       <tspan fill="#58a6ff"> /in/vinicius-leite-4792b02ba</tspan>
-      <tspan fill="#8b949e">  |  </tspan>
-      <tspan fill="#a78bfa" font-weight="600">GRADUACAO:</tspan>
-      <tspan fill="#e6edf3"> Em andamento</tspan>
     </text>
   </g>
 </svg>
